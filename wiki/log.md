@@ -73,3 +73,52 @@ Created master synthesis page integrating all 6 sources. Identified 6 core compo
 
 - Created: `wiki/synthesis/meaning-of-life-components.md`
 - Updated: `wiki/index.md`
+
+## [2026-04-05] ingest | Gottman's Research on Trust and Relationships
+
+Ingested 40+ years of Gottman couples research. Key findings: trust is the #1 issue for couples; bids for connection as the unit of trust; Four Horsemen predict divorce with >90% accuracy; 5:1 positive ratio; zero-sum dynamics have lethal health consequences (58% vs. 20% mortality). ATTUNE framework for building trust.
+
+- Created: `raw/gottman-trust-and-relationships.md`, `wiki/sources/gottman-trust-and-relationships.md`
+- Created: `wiki/entities/john-gottman.md`
+- Updated: `wiki/concepts/relationships.md`, `wiki/concepts/trust.md`
+
+## [2026-04-05] ingest | Attachment Theory in Adult Relationships
+
+Ingested Fraley's overview of attachment theory from Bowlby through adult romantic relationships. Key findings: four attachment styles on two dimensions (anxiety, avoidance); ~60% secure; earned security is possible in adulthood; attachment is dimensional not categorical.
+
+- Created: `raw/attachment-theory-adult-relationships.md`, `wiki/sources/attachment-theory-adult-relationships.md`
+- Created: `wiki/concepts/attachment-theory.md`
+
+## [2026-04-05] ingest | Brené Brown: The Anatomy of Trust
+
+Ingested Brown's research on vulnerability, trust (BRAVING framework), shame resilience, and self-trust. Key finding: self-trust is the foundation — you cannot trust others more than you trust yourself. Trust builds through small moments (marble jar), not grand gestures.
+
+- Created: `raw/brene-brown-anatomy-of-trust.md`, `wiki/sources/brene-brown-anatomy-of-trust.md`
+- Created: `wiki/entities/brene-brown.md`, `wiki/concepts/vulnerability.md`
+
+## [2026-04-05] ingest | How and Why Humans Trust: Meta-Analysis (338 Studies)
+
+Ingested the most comprehensive meta-analysis of trust (2,185 effect sizes, 1974-2018). Key findings: in-group membership has largest effect (r=0.57); transparency strongest trustee factor (r=0.48); propensity to trust does NOT predict actual trust; reputation and closeness are most predictive experimentally; gender is irrelevant.
+
+- Created: `raw/meta-analysis-how-humans-trust.md`, `wiki/sources/meta-analysis-how-humans-trust.md`
+
+## [2026-04-05] ingest | Self-Trust Psychology
+
+Ingested research on self-trust as intrapersonal trust. Definition: "firm reliance on the integrity of yourself." Three obstacles: regret, inner critic, living in past/future. Strategies: self-compassion, mastery building, values alignment, anxiety tolerance.
+
+- Created: `raw/self-trust-psychology.md`, `wiki/sources/self-trust-psychology.md`
+- Created: `wiki/concepts/self-trust.md`
+
+## [2026-04-05] ingest | Dunbar's Number and Relationship Layers
+
+Ingested Dunbar's social brain hypothesis and intimacy circle research. Key finding: humans can maintain ~150 stable relationships in concentric layers (~5→15→50→150→500→1,500), each ~3x the previous. Quality over quantity is a cognitive constraint, not just advice.
+
+- Created: `raw/dunbar-number-relationship-layers.md`, `wiki/sources/dunbar-number-relationship-layers.md`
+- Created: `wiki/entities/robin-dunbar.md`
+
+## [2026-04-05] synthesis | The Nature of Meaningful Relationships
+
+Created deep-dive synthesis on how relationships work, integrating Gottman, Brown, attachment theory, Dunbar, and the trust meta-analysis. Introduced the Relationship Stack model (self-trust → attachment → attunement → trust → vulnerability → repair → shared meaning). Updated master synthesis page with new relationship depth.
+
+- Created: `wiki/synthesis/nature-of-meaningful-relationships.md`
+- Updated: `wiki/synthesis/meaning-of-life-components.md`, `wiki/index.md`

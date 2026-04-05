@@ -3,7 +3,7 @@ title: "Components of a Meaningful Life: Synthesis"
 type: synthesis
 created: 2026-04-05
 updated: 2026-04-05
-sources: [harvard-study-of-adult-development.md, pew-what-makes-life-meaningful-2021.md, greater-good-top-10-insights-2025.md, greater-good-top-10-insights-2024.md, hope-meaning-missouri-2025.md, psychological-richness-third-path-2025.md]
+sources: [harvard-study-of-adult-development.md, pew-what-makes-life-meaningful-2021.md, greater-good-top-10-insights-2025.md, greater-good-top-10-insights-2024.md, hope-meaning-missouri-2025.md, psychological-richness-third-path-2025.md, gottman-trust-and-relationships.md, attachment-theory-adult-relationships.md, brene-brown-anatomy-of-trust.md, meta-analysis-how-humans-trust.md, self-trust-psychology.md, dunbar-number-relationship-layers.md]
 tags: [synthesis, meaning, well-being, components, trends]
 ---
 
@@ -19,7 +19,9 @@ Drawing across 85 years of longitudinal data, 17-country surveys, and dozens of 
 
 ### 1. Close Relationships (strongest evidence)
 
-The single most replicated finding. The [[harvard-study-of-adult-development|Harvard Study]] (85 years, 2,000+ participants) found relationships predict health, happiness, cognitive function, and longevity better than any other factor. The [[pew-what-makes-life-meaningful|Pew survey]] (18,850 adults, 17 countries) found family is the #1 source of meaning in 14 of 17 economies. [[trust|Trust]] in others correlates with life satisfaction across 2.5 million participants. Quality matters more than quantity.
+The single most replicated finding. The [[harvard-study-of-adult-development|Harvard Study]] (85 years, 2,000+ participants) found relationships predict health, happiness, cognitive function, and longevity better than any other factor. The [[pew-what-makes-life-meaningful|Pew survey]] (18,850 adults, 17 countries) found family is the #1 source of meaning in 14 of 17 economies. [[trust|Trust]] in others correlates with life satisfaction across 2.5 million participants. Quality matters more than quantity — and [[robin-dunbar|Dunbar]]'s research shows this is a cognitive constraint, not just wisdom: humans can maintain ~5 deep relationships and ~150 stable ones.
+
+Relationships operate through [[attachment-theory|attachment]] patterns (modifiable in adulthood), deepen through [[vulnerability|vulnerability]], and are maintained through [[trust|trust]] — which builds from small, consistent moments ([[john-gottman|Gottman]]'s bids) rather than grand gestures. [[self-trust|Self-trust]] is the foundation: you cannot trust others more than you trust yourself ([[brene-brown|Brown]]). See [[nature-of-meaningful-relationships|The Nature of Meaningful Relationships]] for the full synthesis.
 
 ### 2. Hope and Forward Orientation
 
