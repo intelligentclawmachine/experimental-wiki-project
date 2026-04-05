@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Wiki — Meaningful Life</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --sidebar-bg: #f5f5f4;
+    --card-bg: #ffffff;
+    --text: #1c1917;
+    --text-secondary: #57534e;
+    --accent: #7c3aed;
+    --accent-light: #ede9fe;
+    --border: #e7e5e4;
+    --tag-bg: #f3f4f6;
+    --source: #059669;
+    --entity: #d97706;
+    --concept: #7c3aed;
+    --synthesis: #dc2626;
+    --link: #6d28d9;
+    --hover-bg: #f5f3ff;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1a;
+      --sidebar-bg: #141414;
+      --card-bg: #232323;
+      --text: #e7e5e4;
+      --text-secondary: #a8a29e;
+      --accent: #a78bfa;
+      --accent-light: #2e1065;
+      --border: #333;
+      --tag-bg: #292524;
+      --source: #34d399;
+      --entity: #fbbf24;
+      --concept: #a78bfa;
+      --synthesis: #f87171;
+      --link: #c4b5fd;
+      --hover-bg: #1e1b2e;
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Sidebar */
+  #sidebar {
+    width: 300px;
+    min-width: 300px;
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  #sidebar-header h1 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+  #sidebar-header p {
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+  #search-box {
+    margin: 12px 16px 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 13px;
+    font-family: var(--font);
+    outline: none;
+    width: calc(100% - 32px);
+  }
+  #search-box:focus { border-color: var(--accent); }
+  #search-box::placeholder { color: var(--text-secondary); }
+
+  #nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+  }
+  .nav-section {
+    padding: 0 16px;
+    margin-bottom: 4px;
+  }
+  .nav-section-title {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    padding: 12px 0 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .nav-section-title .count {
+    font-size: 10px;
+    background: var(--tag-bg);
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .nav-section-title .arrow {
+    font-size: 8px;
+    transition: transform 0.15s;
+  }
+  .nav-section.collapsed .arrow { transform: rotate(-90deg); }
+  .nav-section.collapsed .nav-items { display: none; }
+
+  .nav-item {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.1s;
+    line-height: 1.3;
+  }
+  .nav-item:hover { background: var(--hover-bg); }
+  .nav-item.active { background: var(--accent-light); color: var(--accent); font-weight: 600; }
+  .nav-item .dot {
+    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  }
+  .nav-item[data-type="source"] .dot { background: var(--source); }
+  .nav-item[data-type="entity"] .dot { background: var(--entity); }
+  .nav-item[data-type="concept"] .dot { background: var(--concept); }
+  .nav-item[data-type="synthesis"] .dot { background: var(--synthesis); }
+
+  /* Stats bar */
+  #stats {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stat-badge {
+    display: flex; align-items: center; gap: 4px;
+  }
+  .stat-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  /* Content area */
+  #content-area {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #content {
+    max-width: 780px;
+    width: 100%;
+    padding: 40px 48px 80px;
+  }
+
+  /* Breadcrumb */
+  #breadcrumb {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  #breadcrumb .type-badge {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .type-badge.source { background: #ecfdf5; color: var(--source); }
+  .type-badge.entity { background: #fffbeb; color: var(--entity); }
+  .type-badge.concept { background: var(--accent-light); color: var(--concept); }
+  .type-badge.synthesis { background: #fef2f2; color: var(--synthesis); }
+  @media (prefers-color-scheme: dark) {
+    .type-badge.source { background: #064e3b; }
+    .type-badge.entity { background: #451a03; }
+    .type-badge.synthesis { background: #450a0a; }
+  }
+
+  /* Markdown content styles */
+  #content h1 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  #content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  #content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  #content h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+  #content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  #content a {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  #content a:hover { border-bottom-color: var(--link); }
+  #content strong { font-weight: 700; }
+  #content em { font-style: italic; }
+  #content ul, #content ol {
+    padding-left: 24px;
+    margin-bottom: 12px;
+  }
+  #content li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 4px;
+  }
+  #content blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 8px 16px;
+    margin: 16px 0;
+    background: var(--accent-light);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+  }
+  #content code {
+    font-family: var(--mono);
+    font-size: 13px;
+    background: var(--tag-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  #content pre {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 16px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  #content pre code {
+    background: none;
+    padding: 0;
+  }
+  #content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  #content th {
+    text-align: left;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-bottom: 2px solid var(--border);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+  }
+  #content td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  #content tr:hover td { background: var(--hover-bg); }
+  #content hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+
+  /* Tags in frontmatter */
+  .frontmatter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .fm-tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background: var(--tag-bg);
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  .fm-date {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+  }
+
+  /* Backlinks */
+  #backlinks {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  #backlinks h3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  #backlinks a {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--link);
+    margin-right: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  #backlinks a:hover { text-decoration: underline; }
+
+  /* Landing page */
+  .landing { text-align: center; padding-top: 15vh; }
+  .landing h1 { font-size: 32px; margin-bottom: 8px; }
+  .landing p { color: var(--text-secondary); font-size: 15px; max-width: 420px; margin: 0 auto 32px; line-height: 1.6; }
+  .landing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .landing-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .landing-card:hover { border-color: var(--accent); box-shadow: 0 2px 12px rgba(124,58,237,0.08); }
+  .landing-card h3 { font-size: 14px; margin-bottom: 4px; }
+  .landing-card p { font-size: 12px; color: var(--text-secondary); margin: 0; }
+
+  /* Graph panel */
+  #graph-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 100;
+    transition: transform 0.15s;
+  }
+  #graph-toggle:hover { transform: scale(1.1); }
+  #graph-panel {
+    position: fixed;
+    bottom: 76px;
+    right: 20px;
+    width: 400px;
+    height: 350px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    display: none;
+    z-index: 99;
+    overflow: hidden;
+  }
+  #graph-panel.open { display: block; }
+  #graph-panel canvas { width: 100%; height: 100%; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #sidebar { display: none; }
+    #content { padding: 24px 20px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div id="sidebar-header">
+    <h1>Meaningful Life Wiki</h1>
+    <p>LLM-maintained knowledge base</p>
+  </div>
+  <input type="text" id="search-box" placeholder="Search pages...">
+  <div id="nav"></div>
+  <div id="stats"></div>
+</div>
+
+<div id="content-area">
+  <div id="content"></div>
+</div>
+
+<button id="graph-toggle" title="Toggle graph view">&#9673;</button>
+<div id="graph-panel"><canvas id="graph-canvas"></canvas></div>
+
+<script>
+// ── Wiki data: all pages with metadata ──────────────────────────────
+const pages = {
+  // Sources
+  'sources/harvard-study-of-adult-development': { title: 'Harvard Study of Adult Development', type: 'source', path: 'wiki/sources/harvard-study-of-adult-development.md' },
+  'sources/greater-good-insights-2025': { title: 'Top 10 Insights — Science of a Meaningful Life (2025)', type: 'source', path: 'wiki/sources/greater-good-insights-2025.md' },
+  'sources/greater-good-insights-2024': { title: 'Top 10 Insights — Science of a Meaningful Life (2024)', type: 'source', path: 'wiki/sources/greater-good-insights-2024.md' },
+  'sources/pew-what-makes-life-meaningful': { title: 'What Makes Life Meaningful? — Pew Research (2021)', type: 'source', path: 'wiki/sources/pew-what-makes-life-meaningful.md' },
+  'sources/hope-meaning-missouri': { title: 'Hope as a Meaningful Emotion', type: 'source', path: 'wiki/sources/hope-meaning-missouri.md' },
+  'sources/psychological-richness': { title: 'Psychological Richness: A Third Path', type: 'source', path: 'wiki/sources/psychological-richness.md' },
+  'sources/gottman-trust-and-relationships': { title: "Gottman's Research on Trust and Relationships", type: 'source', path: 'wiki/sources/gottman-trust-and-relationships.md' },
+  'sources/attachment-theory-adult-relationships': { title: 'Attachment Theory in Adult Relationships', type: 'source', path: 'wiki/sources/attachment-theory-adult-relationships.md' },
+  'sources/brene-brown-anatomy-of-trust': { title: 'Brené Brown: The Anatomy of Trust', type: 'source', path: 'wiki/sources/brene-brown-anatomy-of-trust.md' },
+  'sources/meta-analysis-how-humans-trust': { title: 'How and Why Humans Trust: Meta-Analysis', type: 'source', path: 'wiki/sources/meta-analysis-how-humans-trust.md' },
+  'sources/self-trust-psychology': { title: 'Self-Trust: Psychology and How to Build It', type: 'source', path: 'wiki/sources/self-trust-psychology.md' },
+  'sources/dunbar-number-relationship-layers': { title: "Dunbar's Number and Relationship Layers", type: 'source', path: 'wiki/sources/dunbar-number-relationship-layers.md' },
+  // Entities
+  'entities/george-vaillant': { title: 'George Vaillant', type: 'entity', path: 'wiki/entities/george-vaillant.md' },
+  'entities/robert-waldinger': { title: 'Robert Waldinger', type: 'entity', path: 'wiki/entities/robert-waldinger.md' },
+  'entities/laura-king': { title: 'Laura King', type: 'entity', path: 'wiki/entities/laura-king.md' },
+  'entities/erin-westgate': { title: 'Erin Westgate', type: 'entity', path: 'wiki/entities/erin-westgate.md' },
+  'entities/shigehiro-oishi': { title: 'Shigehiro Oishi', type: 'entity', path: 'wiki/entities/shigehiro-oishi.md' },
+  'entities/john-gottman': { title: 'John Gottman', type: 'entity', path: 'wiki/entities/john-gottman.md' },
+  'entities/brene-brown': { title: 'Brené Brown', type: 'entity', path: 'wiki/entities/brene-brown.md' },
+  'entities/robin-dunbar': { title: 'Robin Dunbar', type: 'entity', path: 'wiki/entities/robin-dunbar.md' },
+  // Concepts
+  'concepts/relationships': { title: 'Relationships', type: 'concept', path: 'wiki/concepts/relationships.md' },
+  'concepts/trust': { title: 'Trust', type: 'concept', path: 'wiki/concepts/trust.md' },
+  'concepts/self-trust': { title: 'Self-Trust', type: 'concept', path: 'wiki/concepts/self-trust.md' },
+  'concepts/vulnerability': { title: 'Vulnerability', type: 'concept', path: 'wiki/concepts/vulnerability.md' },
+  'concepts/attachment-theory': { title: 'Attachment Theory', type: 'concept', path: 'wiki/concepts/attachment-theory.md' },
+  'concepts/hope': { title: 'Hope', type: 'concept', path: 'wiki/concepts/hope.md' },
+  'concepts/mature-coping-mechanisms': { title: 'Mature Coping Mechanisms', type: 'concept', path: 'wiki/concepts/mature-coping-mechanisms.md' },
+  'concepts/psychological-richness': { title: 'Psychological Richness', type: 'concept', path: 'wiki/concepts/psychological-richness.md' },
+  'concepts/forgiveness': { title: 'Forgiveness', type: 'concept', path: 'wiki/concepts/forgiveness.md' },
+  'concepts/self-compassion': { title: 'Self-Compassion', type: 'concept', path: 'wiki/concepts/self-compassion.md' },
+  'concepts/nature-and-wellbeing': { title: 'Nature and Well-being', type: 'concept', path: 'wiki/concepts/nature-and-wellbeing.md' },
+  // Synthesis
+  'synthesis/meaning-of-life-components': { title: 'Components of a Meaningful Life', type: 'synthesis', path: 'wiki/synthesis/meaning-of-life-components.md' },
+  'synthesis/nature-of-meaningful-relationships': { title: 'The Nature of Meaningful Relationships', type: 'synthesis', path: 'wiki/synthesis/nature-of-meaningful-relationships.md' },
+  // Meta
+  'log': { title: 'Wiki Log', type: 'source', path: 'wiki/log.md' },
+};
+
+// Alias map for wikilinks like [[hope]] or [[john-gottman|John Gottman]]
+const aliasMap = {};
+for (const [key, page] of Object.entries(pages)) {
+  const slug = key.split('/').pop();
+  aliasMap[slug] = key;
+  aliasMap[page.title.toLowerCase()] = key;
+}
+// extra aliases
+Object.assign(aliasMap, {
+  'harvard-study-of-adult-development': 'sources/harvard-study-of-adult-development',
+  'pew-what-makes-life-meaningful': 'sources/pew-what-makes-life-meaningful',
+  'meaning-of-life-components': 'synthesis/meaning-of-life-components',
+  'nature-of-meaningful-relationships': 'synthesis/nature-of-meaningful-relationships',
+  'charles-snyder': null, // no page yet
+  'cindy-hazan': null,
+  'john-bowlby': null,
+  'work-and-purpose': null,
+});
+
+// ── Minimal markdown renderer ───────────────────────────────────────
+function renderMarkdown(md) {
+  // Remove YAML frontmatter — we render it separately
+  md = md.replace(/^---[\s\S]*?---\n*/m, '');
+
+  let html = md;
+
+  // Code blocks (``` ... ```)
+  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (_, lang, code) =>
+    `<pre><code class="language-${lang}">${esc(code.trimEnd())}</code></pre>`
+  );
+
+  // Tables
+  html = html.replace(/^(\|.+\|)\n(\|[\s\-:|]+\|)\n((?:\|.+\|\n?)+)/gm, (_, header, sep, body) => {
+    const heads = header.split('|').filter(c => c.trim()).map(c => `<th>${inline(c.trim())}</th>`).join('');
+    const aligns = sep.split('|').filter(c => c.trim()).map(c => {
+      if (c.trim().startsWith(':') && c.trim().endsWith(':')) return 'center';
+      if (c.trim().endsWith(':')) return 'right';
+      return 'left';
+    });
+    const rows = body.trim().split('\n').map(r => {
+      const cells = r.split('|').filter(c => c.trim()).map((c, i) =>
+        `<td style="text-align:${aligns[i] || 'left'}">${inline(c.trim())}</td>`
+      ).join('');
+      return `<tr>${cells}</tr>`;
+    }).join('');
+    return `<table><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table>`;
+  });
+
+  // Headings
+  html = html.replace(/^#### (.+)$/gm, '<h4>$1</h4>');
+  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+
+  // Horizontal rules
+  html = html.replace(/^---+$/gm, '<hr>');
+
+  // Blockquotes
+  html = html.replace(/^> (.+)$/gm, '<blockquote><p>$1</p></blockquote>');
+
+  // Unordered lists
+  html = html.replace(/^(\s*)- (.+)$/gm, (_, indent, text) => {
+    const depth = indent.length >= 2 ? ' class="nested"' : '';
+    return `<li${depth}>${inline(text)}</li>`;
+  });
+  html = html.replace(/((?:<li[^>]*>.*<\/li>\n?)+)/g, '<ul>$1</ul>');
+
+  // Ordered lists
+  html = html.replace(/^\d+\. (.+)$/gm, '<oli>$1</oli>');
+  html = html.replace(/((?:<oli>.*<\/oli>\n?)+)/g, (match) => {
+    const items = match.replace(/<\/?oli>/g, '').trim().split('\n').filter(Boolean);
+    return '<ol>' + items.map(i => `<li>${inline(i)}</li>`).join('') + '</ol>';
+  });
+
+  // Paragraphs — wrap remaining plain text lines
+  html = html.replace(/^(?!<[a-z/])((?!<!--).+)$/gm, (_, text) => `<p>${inline(text)}</p>`);
+
+  // Clean up empty paragraphs and double-wrapped inline content
+  html = html.replace(/<p><\/p>/g, '');
+  html = html.replace(/<p>\s*(<h[1-4]>)/g, '$1');
+  html = html.replace(/(<\/h[1-4]>)\s*<\/p>/g, '$1');
+
+  return html;
+}
+
+function inline(text) {
+  // Inline code
+  text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+  // Bold
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic
+  text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+  // Wikilinks: [[slug|display]] or [[slug]]
+  text = text.replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, slug, display) => {
+    const key = aliasMap[slug] || aliasMap[slug.toLowerCase()];
+    const label = display || pages[key]?.title || slug;
+    if (key && pages[key]) {
+      return `<a href="#" data-page="${key}" class="wiki-link">${label}</a>`;
+    }
+    return `<span style="color:var(--text-secondary)" title="No page yet">${label}</span>`;
+  });
+
+  // Standard markdown links: [text](url)
+  text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+    // Internal wiki link?
+    const match = url.match(/(?:\.\.\/)?(?:sources|entities|concepts|synthesis)\/([^.]+)\.md/);
+    if (match) {
+      const slug = match[1];
+      const key = Object.keys(pages).find(k => k.endsWith('/' + slug)) || aliasMap[slug];
+      if (key) return `<a href="#" data-page="${key}" class="wiki-link">${label}</a>`;
+    }
+    if (url.startsWith('http')) return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+    return `<a href="${url}">${label}</a>`;
+  });
+
+  return text;
+}
+
+function esc(str) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// ── Frontmatter parser ──────────────────────────────────────────────
+function parseFrontmatter(md) {
+  const m = md.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return {};
+  const fm = {};
+  m[1].split('\n').forEach(line => {
+    const [key, ...rest] = line.split(':');
+    if (key && rest.length) fm[key.trim()] = rest.join(':').trim();
+  });
+  return fm;
+}
+
+// ── Build sidebar navigation ────────────────────────────────────────
+const sections = [
+  { id: 'synthesis', label: 'Synthesis', icon: '◆' },
+  { id: 'concept', label: 'Concepts', icon: '●' },
+  { id: 'entity', label: 'People', icon: '●' },
+  { id: 'source', label: 'Sources', icon: '●' },
+];
+
+function buildNav(filter = '') {
+  const nav = document.getElementById('nav');
+  nav.innerHTML = '';
+  const lf = filter.toLowerCase();
+
+  sections.forEach(sec => {
+    const items = Object.entries(pages)
+      .filter(([, p]) => p.type === sec.id && (!lf || p.title.toLowerCase().includes(lf)))
+      .sort((a, b) => a[1].title.localeCompare(b[1].title));
+
+    if (items.length === 0) return;
+
+    const section = document.createElement('div');
+    section.className = 'nav-section';
+    section.innerHTML = `
+      <div class="nav-section-title">
+        <span class="arrow">▼</span>
+        ${sec.label}
+        <span class="count">${items.length}</span>
+      </div>
+      <div class="nav-items">
+        ${items.map(([key, p]) => `
+          <div class="nav-item${key === currentPage ? ' active' : ''}" data-key="${key}" data-type="${p.type}">
+            <span class="dot"></span>
+            <span>${p.title}</span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    section.querySelector('.nav-section-title').addEventListener('click', () => {
+      section.classList.toggle('collapsed');
+    });
+    nav.appendChild(section);
+  });
+
+  // Click handlers
+  nav.querySelectorAll('.nav-item').forEach(el => {
+    el.addEventListener('click', () => loadPage(el.dataset.key));
+  });
+}
+
+// Stats bar
+function buildStats() {
+  const counts = { source: 0, entity: 0, concept: 0, synthesis: 0 };
+  Object.values(pages).forEach(p => { if (counts[p.type] !== undefined) counts[p.type]++; });
+  document.getElementById('stats').innerHTML = Object.entries(counts)
+    .map(([type, count]) => `<span class="stat-badge"><span class="stat-dot" style="background:var(--${type})"></span>${count} ${type}s</span>`)
+    .join('');
+}
+
+// ── Page loading ────────────────────────────────────────────────────
+let currentPage = null;
+const pageCache = {};
+
+async function loadPage(key) {
+  if (!pages[key]) return;
+  currentPage = key;
+  window.location.hash = key;
+
+  // Update active state
+  document.querySelectorAll('.nav-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.key === key);
+  });
+
+  const contentEl = document.getElementById('content');
+  contentEl.innerHTML = '<p style="color:var(--text-secondary)">Loading...</p>';
+
+  try {
+    let md;
+    if (pageCache[key]) {
+      md = pageCache[key];
+    } else {
+      const resp = await fetch(pages[key].path);
+      md = await resp.text();
+      pageCache[key] = md;
+    }
+
+    const fm = parseFrontmatter(md);
+    const page = pages[key];
+
+    // Render breadcrumb
+    const typeBadge = `<span class="type-badge ${page.type}">${page.type}</span>`;
+    const folder = key.split('/')[0];
+
+    // Render frontmatter tags
+    let tagsHtml = '';
+    if (fm.tags) {
+      const tags = fm.tags.replace(/[\[\]]/g, '').split(',').map(t => t.trim()).filter(Boolean);
+      tagsHtml = `<div class="frontmatter">${tags.map(t => `<span class="fm-tag">${t}</span>`).join('')}</div>`;
+    }
+    let dateHtml = '';
+    if (fm.updated) {
+      dateHtml = `<div class="fm-date">Updated: ${fm.updated}</div>`;
+    }
+
+    // Render markdown
+    const rendered = renderMarkdown(md);
+
+    // Compute backlinks
+    const backlinks = [];
+    for (const [k, p] of Object.entries(pages)) {
+      if (k === key) continue;
+      const slug = key.split('/').pop();
+      if (pageCache[k]) {
+        if (pageCache[k].includes(slug)) backlinks.push(k);
+      }
+    }
+
+    let backlinksHtml = '';
+    if (backlinks.length > 0) {
+      backlinksHtml = `<div id="backlinks"><h3>Linked from</h3>${backlinks.map(k =>
+        `<a href="#" data-page="${k}" class="wiki-link">${pages[k].title}</a>`
+      ).join('')}</div>`;
+    }
+
+    contentEl.innerHTML = `
+      <div id="breadcrumb">${typeBadge} <span>${folder}</span></div>
+      ${tagsHtml}
+      ${dateHtml}
+      ${rendered}
+      ${backlinksHtml}
+    `;
+
+    // Bind internal link clicks
+    contentEl.querySelectorAll('.wiki-link').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        loadPage(a.dataset.page);
+      });
+    });
+
+    // Scroll to top
+    document.getElementById('content-area').scrollTop = 0;
+
+    // Pre-load linked pages for backlinks
+    preloadLinked(md);
+
+  } catch (err) {
+    contentEl.innerHTML = `<p style="color:var(--synthesis)">Error loading page: ${err.message}</p>`;
+  }
+}
+
+async function preloadLinked(md) {
+  // Find all referenced page keys and preload them
+  const refs = new Set();
+  const wikiRe = /\[\[([^\]|]+?)(?:\|[^\]]+?)?\]\]/g;
+  let m;
+  while ((m = wikiRe.exec(md)) !== null) {
+    const key = aliasMap[m[1]] || aliasMap[m[1].toLowerCase()];
+    if (key && pages[key] && !pageCache[key]) refs.add(key);
+  }
+  const linkRe = /\[([^\]]+)\]\(([^)]+\.md)\)/g;
+  while ((m = linkRe.exec(md)) !== null) {
+    const slug = m[2].replace(/.*\//, '').replace('.md', '');
+    const key = Object.keys(pages).find(k => k.endsWith('/' + slug)) || aliasMap[slug];
+    if (key && pages[key] && !pageCache[key]) refs.add(key);
+  }
+
+  for (const key of refs) {
+    try {
+      const resp = await fetch(pages[key].path);
+      pageCache[key] = await resp.text();
+    } catch {}
+  }
+}
+
+function showLanding() {
+  currentPage = null;
+  document.getElementById('content').innerHTML = `
+    <div class="landing">
+      <h1>Meaningful Life Wiki</h1>
+      <p>A research-backed knowledge base exploring what makes life meaningful — relationships, trust, hope, resilience, and more.</p>
+      <div class="landing-grid">
+        <div class="landing-card" data-page="synthesis/meaning-of-life-components">
+          <h3>◆ Components of a Meaningful Life</h3>
+          <p>Master synthesis across all sources</p>
+        </div>
+        <div class="landing-card" data-page="synthesis/nature-of-meaningful-relationships">
+          <h3>◆ Meaningful Relationships</h3>
+          <p>How relationships work and how to build them</p>
+        </div>
+        <div class="landing-card" data-page="concepts/relationships">
+          <h3>● Relationships</h3>
+          <p>The dominant predictor of a meaningful life</p>
+        </div>
+        <div class="landing-card" data-page="concepts/trust">
+          <h3>● Trust</h3>
+          <p>Interpersonal and intrapersonal dimensions</p>
+        </div>
+      </div>
+    </div>
+  `;
+  document.querySelectorAll('.landing-card').forEach(card => {
+    card.addEventListener('click', () => loadPage(card.dataset.page));
+  });
+}
+
+// ── Graph view ──────────────────────────────────────────────────────
+let graphOpen = false;
+document.getElementById('graph-toggle').addEventListener('click', () => {
+  graphOpen = !graphOpen;
+  document.getElementById('graph-panel').classList.toggle('open', graphOpen);
+  if (graphOpen) drawGraph();
+});
+
+function drawGraph() {
+  const canvas = document.getElementById('graph-canvas');
+  const ctx = canvas.getContext('2d');
+  const rect = canvas.parentElement.getBoundingClientRect();
+  canvas.width = rect.width * 2;
+  canvas.height = rect.height * 2;
+  canvas.style.width = rect.width + 'px';
+  canvas.style.height = rect.height + 'px';
+  ctx.scale(2, 2);
+
+  const w = rect.width, h = rect.height;
+  const keys = Object.keys(pages).filter(k => k !== 'log');
+  const colors = { source: '#059669', entity: '#d97706', concept: '#7c3aed', synthesis: '#dc2626' };
+
+  // Layout: force-directed (simplified)
+  const nodes = keys.map((key, i) => {
+    const angle = (i / keys.length) * Math.PI * 2;
+    const r = Math.min(w, h) * 0.35;
+    return {
+      key, x: w/2 + Math.cos(angle) * r * (0.7 + Math.random() * 0.3),
+      y: h/2 + Math.sin(angle) * r * (0.7 + Math.random() * 0.3),
+      type: pages[key].type,
+      title: pages[key].title,
+    };
+  });
+
+  // Build edges from cached content
+  const edges = [];
+  for (const src of nodes) {
+    const content = pageCache[src.key] || '';
+    for (const tgt of nodes) {
+      if (src.key === tgt.key) continue;
+      const slug = tgt.key.split('/').pop();
+      if (content.includes(slug)) {
+        edges.push([src, tgt]);
+      }
+    }
+  }
+
+  // Simple force simulation (20 iterations)
+  for (let iter = 0; iter < 30; iter++) {
+    // Repulsion
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        let dx = nodes[j].x - nodes[i].x;
+        let dy = nodes[j].y - nodes[i].y;
+        let d = Math.sqrt(dx*dx + dy*dy) || 1;
+        let force = 800 / (d * d);
+        nodes[i].x -= dx / d * force;
+        nodes[i].y -= dy / d * force;
+        nodes[j].x += dx / d * force;
+        nodes[j].y += dy / d * force;
+      }
+    }
+    // Attraction (edges)
+    for (const [a, b] of edges) {
+      let dx = b.x - a.x;
+      let dy = b.y - a.y;
+      let d = Math.sqrt(dx*dx + dy*dy) || 1;
+      let force = (d - 60) * 0.02;
+      a.x += dx / d * force;
+      a.y += dy / d * force;
+      b.x -= dx / d * force;
+      b.y -= dy / d * force;
+    }
+    // Center gravity
+    for (const n of nodes) {
+      n.x += (w/2 - n.x) * 0.01;
+      n.y += (h/2 - n.y) * 0.01;
+      n.x = Math.max(20, Math.min(w-20, n.x));
+      n.y = Math.max(20, Math.min(h-20, n.y));
+    }
+  }
+
+  // Draw edges
+  ctx.strokeStyle = 'rgba(150,150,150,0.15)';
+  ctx.lineWidth = 0.5;
+  for (const [a, b] of edges) {
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.stroke();
+  }
+
+  // Draw nodes
+  for (const n of nodes) {
+    const isCurrent = n.key === currentPage;
+    const r = isCurrent ? 7 : n.type === 'synthesis' ? 6 : 4;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = colors[n.type] || '#888';
+    ctx.globalAlpha = isCurrent ? 1 : 0.7;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    if (isCurrent || n.type === 'synthesis') {
+      ctx.font = '9px Inter, sans-serif';
+      ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text');
+      ctx.fillText(n.title.length > 25 ? n.title.slice(0, 25) + '...' : n.title, n.x + r + 4, n.y + 3);
+    }
+  }
+
+  // Click handler on canvas
+  canvas.onclick = (e) => {
+    const cr = canvas.getBoundingClientRect();
+    const mx = e.clientX - cr.left, my = e.clientY - cr.top;
+    for (const n of nodes) {
+      if (Math.abs(n.x - mx) < 12 && Math.abs(n.y - my) < 12) {
+        loadPage(n.key);
+        drawGraph();
+        break;
+      }
+    }
+  };
+}
+
+// ── Search ──────────────────────────────────────────────────────────
+document.getElementById('search-box').addEventListener('input', (e) => {
+  buildNav(e.target.value);
+});
+
+// ── Keyboard nav ────────────────────────────────────────────────────
+document.addEventListener('keydown', (e) => {
+  if (e.key === '/' && document.activeElement !== document.getElementById('search-box')) {
+    e.preventDefault();
+    document.getElementById('search-box').focus();
+  }
+  if (e.key === 'Escape') {
+    document.getElementById('search-box').blur();
+    document.getElementById('search-box').value = '';
+    buildNav();
+  }
+});
+
+// ── Init ────────────────────────────────────────────────────────────
+buildNav();
+buildStats();
+
+// Preload all pages for backlinks and graph
+async function preloadAll() {
+  const promises = Object.entries(pages).map(async ([key, p]) => {
+    if (!pageCache[key]) {
+      try {
+        const resp = await fetch(p.path);
+        pageCache[key] = await resp.text();
+      } catch {}
+    }
+  });
+  await Promise.all(promises);
+}
+
+preloadAll().then(() => {
+  // Check URL hash
+  const hash = window.location.hash.slice(1);
+  if (hash && pages[hash]) {
+    loadPage(hash);
+  } else {
+    showLanding();
+  }
+});
+
+window.addEventListener('hashchange', () => {
+  const hash = window.location.hash.slice(1);
+  if (hash && pages[hash]) loadPage(hash);
+  else showLanding();
+});
+</script>
+</body>
+</html>
