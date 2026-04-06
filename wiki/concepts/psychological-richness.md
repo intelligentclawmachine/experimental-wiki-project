@@ -43,3 +43,4 @@ The concept resonates across cultures, suggesting it captures something fundamen
 - [[hope|Hope]] — may drive the pursuit of rich experiences
 - [[relationships|Relationships]] — service to others amplifies richness
 - [[meaning-of-life-components|Components of a Meaningful Life]]
+- [[sensation-seeking|Sensation Seeking]] — experience seeking as a healthy richness pathway

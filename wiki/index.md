@@ -42,6 +42,10 @@ Master catalog of all pages in this knowledge base.
 - [Psychological Safety in Teams](sources/psychological-safety-edmondson.md) — Edmondson; safety vs. trust distinction
 - [2026 Edelman Trust Barometer](sources/edelman-trust-barometer-2026.md) — Institutional trust decline; insularity shift
 - [EFT: Attachment Injury Resolution](sources/eft-attachment-injury-resolution.md) — Evidence-based couples therapy for trust repair (70-75% success)
+- [Sensation Seeking: Biosocial Bases](sources/sensation-seeking-zuckerman.md) — Zuckerman; four dimensions, dopamine, MAO-B, optimal arousal
+- [Stimulation as Avoidance: Active Escape](sources/stimulation-avoidance-active-escape.md) — Busyness, behavioral addictions, dopamine trap
+- [Boredom, Distress Intolerance](sources/boredom-distress-intolerance.md) — MAC model, DMN, digital acceleration, distress tolerance
+- [Counterphobic Behavior and Thrill-Seeking](sources/counterphobic-thrill-seeking.md) — Anna Freud, trauma repetition, workaholism, exercise addiction
 
 ## Entities
 
@@ -81,6 +85,10 @@ Master catalog of all pages in this knowledge base.
 - [Trust Repair](concepts/trust-repair.md) — Competence vs. integrity violations; deception ceiling
 - [Psychological Safety](concepts/psychological-safety.md) — Team-level trust; error-reporting paradox
 - [Daily Well-Being Fundamentals](concepts/daily-wellbeing-fundamentals.md) — 15 evidence-based daily practices
+- [Sensation Seeking](concepts/sensation-seeking.md) — Zuckerman's four dimensions; approach vs. avoidance-motivated
+- [Stimulation-Based Avoidance](concepts/stimulation-based-avoidance.md) — Avoidance through busyness, overstimulation, behavioral addiction
+- [Boredom Intolerance](concepts/boredom-intolerance.md) — Boredom as aversive signal; DMN, distress intolerance, digital amplification
+- [Counterphobic Behavior](concepts/counterphobic-behavior.md) — Thrill-seeking, adrenaline addiction, workaholism, trauma repetition
 
 ## Synthesis
 
@@ -88,3 +96,4 @@ Master catalog of all pages in this knowledge base.
 - [The Nature of Meaningful Relationships](synthesis/nature-of-meaningful-relationships.md) — Deep dive: trust, vulnerability, the relationship stack
 - [Self-Knowledge and Meaning](synthesis/self-knowledge-and-meaning.md) — Ego-syntonicity, defenses, and self-concordance
 - [The Avoidance–Growth Spectrum](synthesis/avoidance-growth-spectrum.md) — Two paths from adversity: avoidance vs. engagement
+- [The Stimulation-Avoidance Paradox](synthesis/stimulation-avoidance-paradox.md) — How seeking more stimulation to avoid feeling creates more distress

@@ -62,6 +62,8 @@ Adverse childhood experiences (ACEs) initiate allostatic load during critical de
 
 - [[stress-coping-models]] — how coping strategies interact with load
 - [[experiential-avoidance]] — avoidance as a driver of hidden load
+- [[stimulation-based-avoidance]] — overstimulation as a driver of allostatic load
+- [[counterphobic-behavior]] — adrenaline addiction and chronic HPA activation
 - [[vagal-tone-stress-regulation]] — parasympathetic recovery mechanisms
 - [[relationships]] — social support as the primary buffer
 - [[nature-and-wellbeing]] — nature exposure reduces physiological stress markers

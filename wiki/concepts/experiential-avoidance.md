@@ -59,6 +59,10 @@ The antidote is not white-knuckling through discomfort but developing **psycholo
 
 The ACT hexaflex offers six processes that counter avoidance: present moment awareness, cognitive defusion, acceptance, self-as-context, values clarification, and committed action.
 
+## Avoidance Through Stimulation
+
+Avoidance doesn't always look like withdrawal. [Stimulation-based avoidance](../concepts/stimulation-based-avoidance.md) uses busyness, thrill-seeking, doom-scrolling, and process addictions to flood the senses and crowd out unwanted internal experience. It's functionally identical to withdrawal-based avoidance but socially invisible — even rewarded. See [[stimulation-based-avoidance]] and the [[stimulation-avoidance-paradox]] for the self-reinforcing trap this creates.
+
 ## Related Concepts
 
 - [[defense-mechanisms]] — avoidance maps to immature defenses in Vaillant's hierarchy
@@ -67,3 +71,7 @@ The ACT hexaflex offers six processes that counter avoidance: present moment awa
 - [[post-traumatic-growth]] — growth requires the opposite of avoidance: deliberate engagement
 - [[stress-coping-models]] — avoidance as maladaptive coping
 - [[vulnerability]] — vulnerability is the willingness to *not* avoid
+- [[stimulation-based-avoidance]] — avoidance through action, busyness, and overstimulation
+- [[sensation-seeking]] — personality trait that can serve avoidance
+- [[boredom-intolerance]] — the aversive state that drives stimulation-seeking avoidance
+- [[counterphobic-behavior]] — thrill-seeking and crisis manufacture as avoidance

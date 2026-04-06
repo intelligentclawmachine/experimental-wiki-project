@@ -217,3 +217,26 @@ Expansion of trust coverage across multiple dimensions.
 **Updated:**
 - `wiki/concepts/trust.md` — major expansion with neuroscience, philosophy, repair, safety, and institutional sections
 - `wiki/index.md` — all new pages registered
+
+## [2026-04-06] ingest | Stimulation-Based Avoidance: Sensation Seeking, Boredom, and Counterphobic Behavior (4 Sources)
+
+Exploration of avoidance through stimulation — the pattern of using intense, constant, or escalating external stimulation to escape uncomfortable internal states.
+
+**Sources ingested:**
+1. Sensation Seeking (Zuckerman 1994) — four dimensions, dopamine/MAO-B biology, approach vs. avoidance motivation
+2. Stimulation as Avoidance (synthesis 2025) — active avoidance, behavioral addictions, dopamine trap, pleasure-pain balance
+3. Boredom, Distress Intolerance (synthesis 2025) — MAC model, default mode network, digital amplification, nomophobia
+4. Counterphobic Behavior and Thrill-Seeking (synthesis 2025) — Anna Freud, trauma repetition, workaholism, exercise addiction, adrenaline addiction
+
+**Created:**
+- 4 raw source documents, 4 source summary pages
+- 4 concept pages: Sensation Seeking, Stimulation-Based Avoidance, Boredom Intolerance, Counterphobic Behavior
+- 1 synthesis page: The Stimulation-Avoidance Paradox
+
+**Updated:**
+- `wiki/concepts/experiential-avoidance.md` — added stimulation-based avoidance section and cross-references
+- `wiki/concepts/defense-mechanisms.md` — added counterphobic behavior and stimulation-based avoidance links
+- `wiki/concepts/allostatic-load.md` — added stimulation and counterphobic references
+- `wiki/concepts/psychological-richness.md` — added sensation seeking as healthy richness pathway
+- `wiki/synthesis/avoidance-growth-spectrum.md` — added stimulation-based avoidance and paradox links
+- `wiki/index.md` — all new pages registered

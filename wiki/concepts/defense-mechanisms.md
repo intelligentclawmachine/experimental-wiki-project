@@ -88,3 +88,5 @@ Defenses and [[stress-coping-models|coping strategies]] describe overlapping phe
 - [[experiential-avoidance|Experiential Avoidance]] — avoidance as the core immature defense process
 - [[attachment-theory|Attachment Theory]] — attachment styles predict defense patterns
 - [[stress-coping-models|Stress Coping Models]] — the cognitive-behavioral complement to defenses
+- [[counterphobic-behavior|Counterphobic Behavior]] — seeking feared situations as anxiety management (Anna Freud)
+- [[stimulation-based-avoidance|Stimulation-Based Avoidance]] — acting out and sensation seeking as defense

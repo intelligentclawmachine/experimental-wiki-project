@@ -101,6 +101,8 @@ The choice between avoidance and engagement is not purely psychological — it p
 ## Related Pages
 
 - [[experiential-avoidance|Experiential Avoidance]] — the avoidance end of the spectrum
+- [[stimulation-based-avoidance|Stimulation-Based Avoidance]] — avoidance disguised as engagement
+- [[stimulation-avoidance-paradox|The Stimulation-Avoidance Paradox]] — how seeking more stimulation creates more distress
 - [[post-traumatic-growth|Post-Traumatic Growth]] — the growth end
 - [[stress-coping-models|Stress Coping Models]] — the framework connecting them
 - [[allostatic-load|Allostatic Load]] — the body's account of which path you're on
