@@ -36,6 +36,11 @@ Master catalog of all pages in this knowledge base.
 - [Vagal Stimulation Model](sources/vagal-tone-contemplative.md) — Why breathwork/meditation/yoga all reduce stress
 - [Post-Traumatic Growth: Tedeschi](sources/post-traumatic-growth.md) — Five domains of growth after adversity
 - [Attachment Insecurity and Earned Security](sources/attachment-insecurity-earned-security.md) — Practical pathways from avoidant to secure
+- [The Neuroscience of Trust](sources/neuroscience-of-trust.md) — Oxytocin as trust molecule; 8 trust-building behaviors (Zak)
+- [Trust Repair: Systematic Review](sources/trust-repair-review.md) — Competence vs. integrity violations; deception ceiling
+- [Philosophy of Trust](sources/philosophy-of-trust.md) — Trust vs. reliance; Baier, Hardin, Hawley, O'Neill
+- [Psychological Safety in Teams](sources/psychological-safety-edmondson.md) — Edmondson; safety vs. trust distinction
+- [2026 Edelman Trust Barometer](sources/edelman-trust-barometer-2026.md) — Institutional trust decline; insularity shift
 
 ## Entities
 
@@ -48,6 +53,8 @@ Master catalog of all pages in this knowledge base.
 - [Brené Brown](entities/brene-brown.md) — Vulnerability, BRAVING, shame resilience
 - [Robin Dunbar](entities/robin-dunbar.md) — Social brain hypothesis, relationship layers
 - [Richard Tedeschi](entities/richard-tedeschi.md) — Post-traumatic growth pioneer
+- [Paul Zak](entities/paul-zak.md) — Neuroeconomist; oxytocin and trust
+- [Amy Edmondson](entities/amy-edmondson.md) — Psychological safety researcher
 
 ## Concepts
 
@@ -70,6 +77,8 @@ Master catalog of all pages in this knowledge base.
 - [Allostatic Load](concepts/allostatic-load.md) — Biological cost of chronic stress
 - [Vagal Tone and Stress Regulation](concepts/vagal-tone-stress-regulation.md) — Breathing, HRV, parasympathetic recovery
 - [Post-Traumatic Growth](concepts/post-traumatic-growth.md) — Five domains of growth after adversity
+- [Trust Repair](concepts/trust-repair.md) — Competence vs. integrity violations; deception ceiling
+- [Psychological Safety](concepts/psychological-safety.md) — Team-level trust; error-reporting paradox
 - [Daily Well-Being Fundamentals](concepts/daily-wellbeing-fundamentals.md) — 15 evidence-based daily practices
 
 ## Synthesis

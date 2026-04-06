@@ -197,3 +197,23 @@ Major expansion covering avoidance, stress coping mechanisms, and post-traumatic
 - `wiki/concepts/vulnerability.md` — linked to avoidance and PTG
 - `wiki/concepts/relationships.md` — added biological buffer section (allostatic load)
 - `wiki/index.md` — all new pages registered
+
+## [2026-04-06] ingest | Trust: Neuroscience, Repair, Philosophy, Safety, Institutions (5 Sources)
+
+Expansion of trust coverage across multiple dimensions.
+
+**Sources ingested:**
+1. Neuroscience of Trust (Paul Zak, HBR 2017) — oxytocin feedback loop, 8 trust-building behaviors
+2. Trust Repair Review (Sharma et al. 2023 + Giacobbi 2025) — competence vs. integrity violations, deception ceiling
+3. Philosophy of Trust (Stanford Encyclopedia 2025) — trust vs. reliance, competing theories
+4. Psychological Safety (Edmondson 1999) — team-level safety vs. dyadic trust, error-reporting paradox
+5. Edelman Trust Barometer (2026) — institutional trust decline, insularity shift
+
+**Created:**
+- 5 raw source documents, 5 source summary pages
+- 2 new concept pages: Trust Repair, Psychological Safety
+- 2 entity pages: Paul Zak, Amy Edmondson
+
+**Updated:**
+- `wiki/concepts/trust.md` — major expansion with neuroscience, philosophy, repair, safety, and institutional sections
+- `wiki/index.md` — all new pages registered
