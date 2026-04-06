@@ -152,3 +152,19 @@ Created synthesis connecting ego-syntonicity, defense mechanisms, and self-conco
 - Created: `wiki/synthesis/self-knowledge-and-meaning.md`
 - Updated: `wiki/synthesis/meaning-of-life-components.md` (added emerging trend #7 and cross-references)
 - Updated: `wiki/index.md`, `wiki.html` (new pages registered)
+
+## [2026-04-05] ingest | Daily Well-Being Protocols (15 Practices)
+
+Compiled evidence-based compendium of 15 daily well-being behaviors from extensive web research across Huberman Lab, Stanford RCTs, PMC meta-analyses, Harvard Health, Greater Good, Sleep Foundation, and others. Practices span morning anchors (sunlight, hydration, caffeine delay, protein breakfast), active practices (exercise, breathwork, meditation, cold exposure, nature), throughout-day habits (micro social interactions, walking, digital boundaries), and evening routines (gratitude, self-compassion, sleep consistency).
+
+- Created: `raw/daily-wellbeing-protocols.md`, `raw/breathwork-stanford-rct.md`
+- Created: `wiki/sources/daily-wellbeing-protocols.md`, `wiki/sources/breathwork-stanford-rct.md`
+- Created: `wiki/concepts/daily-wellbeing-fundamentals.md`
+
+## [2026-04-05] ingest | Breathwork vs. Meditation: Stanford RCT
+
+Ingested Cell Reports Medicine (2023) Stanford RCT comparing breathwork protocols to mindfulness meditation (N=108, 28 days). Key finding: 5-minute daily cyclic sighing outperformed meditation for mood improvement. Cyclic sighing: +1.89 positive affect, -3.85 anxiety. Benefits compound with adherence.
+
+- Created: `raw/breathwork-stanford-rct.md`, `wiki/sources/breathwork-stanford-rct.md`
+- Updated: `wiki/synthesis/meaning-of-life-components.md` (added micro-level foundation note)
+- Updated: `wiki/index.md`, `wiki.html` (new pages registered)

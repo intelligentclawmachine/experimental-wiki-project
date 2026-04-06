@@ -23,9 +23,11 @@ Master catalog of all pages in this knowledge base.
 - [How and Why Humans Trust: Meta-Analysis](sources/meta-analysis-how-humans-trust.md) — 338 studies; three-factor model
 - [Self-Trust Psychology](sources/self-trust-psychology.md) — Definition, obstacles, building strategies
 - [Dunbar's Number and Relationship Layers](sources/dunbar-number-relationship-layers.md) — ~5→15→50→150 intimacy circles
-- [Ego-Syntonic and Ego-Dystonic Behaviors](sources/ego-syntonic-dystonic.md) — Self-consistent vs. self-conflicting behaviors; blind spots
+- [Ego-Syntonic and Ego-Dystonic Behaviors](sources/ego-syntonic-dystonic.md) — Self-consistent vs. self-conflicting; blind spots
 - [Self-Concordance Theory and Ego Identity](sources/self-concordance-ego-identity.md) — Values-aligned goals; identity causes concordance
 - [Hierarchy of Defense Mechanisms](sources/defense-mechanisms-hierarchy.md) — 30 mechanisms, 7 levels; ego-syntonicity gradient
+- [Daily Well-Being Protocols](sources/daily-wellbeing-protocols.md) — 15 evidence-based daily behaviors compendium
+- [Breathwork vs. Meditation: Stanford RCT](sources/breathwork-stanford-rct.md) — 5-min cyclic sighing outperforms meditation for mood
 
 ## Entities
 
@@ -51,12 +53,13 @@ Master catalog of all pages in this knowledge base.
 - [Forgiveness](concepts/forgiveness.md) — Emotional unburdening; relationship repair
 - [Self-Compassion](concepts/self-compassion.md) — 20-second micropractice evidence
 - [Nature and Well-being](concepts/nature-and-wellbeing.md) — Biodiversity effect
-- [Ego-Syntonic and Ego-Dystonic](concepts/ego-syntonic-and-dystonic.md) — Why harmful patterns feel natural; the blind-spot problem
+- [Ego-Syntonic and Ego-Dystonic](concepts/ego-syntonic-and-dystonic.md) — Why harmful patterns feel natural
 - [Self-Concordance](concepts/self-concordance.md) — Values-aligned vs. merely comfortable goals
 - [Defense Mechanisms](concepts/defense-mechanisms.md) — 30 mechanisms, 7 levels; ego-syntonicity gradient
+- [Daily Well-Being Fundamentals](concepts/daily-wellbeing-fundamentals.md) — 15 evidence-based daily practices: sunlight, caffeine delay, exercise, breathwork, meditation, cold exposure, nature, gratitude, sleep, hydration, nutrition, social, digital boundaries, self-compassion, walking
 
 ## Synthesis
 
-- [Components of a Meaningful Life](synthesis/meaning-of-life-components.md) — Master synthesis: relationships, hope, purpose, resilience, richness, nature
-- [The Nature of Meaningful Relationships](synthesis/nature-of-meaningful-relationships.md) — Deep dive: trust dynamics, vulnerability, the relationship stack
-- [Self-Knowledge and Meaning](synthesis/self-knowledge-and-meaning.md) — How ego-syntonicity, defenses, and self-concordance connect to meaning
+- [Components of a Meaningful Life](synthesis/meaning-of-life-components.md) — Master synthesis across all sources
+- [The Nature of Meaningful Relationships](synthesis/nature-of-meaningful-relationships.md) — Deep dive: trust, vulnerability, the relationship stack
+- [Self-Knowledge and Meaning](synthesis/self-knowledge-and-meaning.md) — Ego-syntonicity, defenses, and self-concordance

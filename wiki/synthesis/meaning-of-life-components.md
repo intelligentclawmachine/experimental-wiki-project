@@ -69,6 +69,8 @@ The Harvard Study's overarching message: "resilience counts." [[mature-coping-me
 
 If forced to distill: **a meaningful life is built on close relationships, oriented by hope and purpose, sustained by resilient coping, enriched by diverse experiences, and grounded in the natural world.** The relationships are load-bearing. Everything else is important but secondary.
 
+These macro-level components require a **micro-level foundation** — [[daily-wellbeing-fundamentals|daily well-being practices]] (sunlight, sleep, exercise, breathwork, hydration, nutrition, social connection, nature) that create the physiological and psychological conditions for meaning to emerge. You can't build the relationship stack on an empty tank.
+
 Vaillant said it most concisely: *"One is love. The other is finding a way of coping with life that does not push love away."*
 
 ---
