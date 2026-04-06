@@ -423,15 +423,67 @@
   #graph-panel.open { display: block; }
   #graph-panel canvas { width: 100%; height: 100%; }
 
+  /* Mobile menu toggle */
+  #mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    z-index: 201;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 20px;
+    color: var(--text);
+    line-height: 1;
+  }
+  #sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 199;
+  }
+
   /* Responsive */
   @media (max-width: 768px) {
-    #sidebar { display: none; }
-    #content { padding: 24px 20px 60px; }
+    #mobile-menu-toggle { display: flex; }
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 200;
+      transform: translateX(-100%);
+      transition: transform 0.25s ease;
+      box-shadow: 4px 0 24px rgba(0,0,0,0.15);
+    }
+    #sidebar.open {
+      transform: translateX(0);
+    }
+    #sidebar-overlay.open {
+      display: block;
+    }
+    #content { padding: 64px 20px 60px; }
+    #graph-panel {
+      width: calc(100vw - 40px);
+      right: 20px;
+      bottom: 76px;
+      height: 300px;
+    }
   }
 </style>
 </head>
 <body>
 
+<button id="mobile-menu-toggle" aria-label="Open navigation">&#9776;</button>
+<div id="sidebar-overlay"></div>
 <div id="sidebar">
   <div id="sidebar-header">
     <h1>Meaningful Life Wiki</h1>
@@ -713,6 +765,7 @@ async function loadPage(key) {
   if (!pages[key]) return;
   currentPage = key;
   window.location.hash = key;
+  closeMobileSidebar();
 
   // Update active state
   document.querySelectorAll('.nav-item').forEach(el => {
@@ -993,6 +1046,26 @@ document.addEventListener('keydown', (e) => {
     buildNav();
   }
 });
+
+// ── Mobile sidebar toggle ──────────────────────────────────────────
+const mobileToggle = document.getElementById('mobile-menu-toggle');
+const sidebarEl = document.getElementById('sidebar');
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+function openMobileSidebar() {
+  sidebarEl.classList.add('open');
+  sidebarOverlay.classList.add('open');
+  mobileToggle.innerHTML = '&#10005;';
+}
+function closeMobileSidebar() {
+  sidebarEl.classList.remove('open');
+  sidebarOverlay.classList.remove('open');
+  mobileToggle.innerHTML = '&#9776;';
+}
+mobileToggle.addEventListener('click', () => {
+  sidebarEl.classList.contains('open') ? closeMobileSidebar() : openMobileSidebar();
+});
+sidebarOverlay.addEventListener('click', closeMobileSidebar);
 
 // ── Init ────────────────────────────────────────────────────────────
 buildNav();
