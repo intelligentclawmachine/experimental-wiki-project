@@ -638,15 +638,16 @@ function renderMarkdown(md) {
     const protectPipes = (s) => s.replace(/\[\[([^\]]*?)\]\]/g, (m) => m.replace(/\|/g, '\x00'));
     const unprotect = (s) => s.replace(/\x00/g, '|');
     const ph = protectPipes(header);
-    const aligns = sep.split('|').filter(c => c.trim()).map(c => {
+    const splitRow = (s) => { const parts = s.split('|'); return parts.slice(1, parts.length - 1); };
+    const aligns = splitRow(sep).map(c => {
       if (c.trim().startsWith(':') && c.trim().endsWith(':')) return 'center';
       if (c.trim().endsWith(':')) return 'right';
       return 'left';
     });
-    const heads = ph.split('|').filter(c => c.trim()).map((c, i) => `<th style="text-align:${aligns[i] || 'left'}">${inline(unprotect(c.trim()))}</th>`).join('');
+    const heads = splitRow(ph).map((c, i) => `<th style="text-align:${aligns[i] || 'left'}">${inline(unprotect(c.trim()))}</th>`).join('');
     const rows = body.trim().split('\n').map(r => {
       const pr = protectPipes(r);
-      const cells = pr.split('|').filter(c => c.trim()).map((c, i) =>
+      const cells = splitRow(pr).map((c, i) =>
         `<td style="text-align:${aligns[i] || 'left'}">${inline(unprotect(c.trim()))}</td>`
       ).join('');
       return `<tr>${cells}</tr>`;
