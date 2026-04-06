@@ -1,7 +1,7 @@
 ---
 title: Wiki Log
 type: log
-updated: 2026-04-05
+updated: 2026-04-06
 ---
 
 # Wiki Log
@@ -152,3 +152,48 @@ Created synthesis connecting ego-syntonicity, defense mechanisms, and self-conco
 - Created: `wiki/synthesis/self-knowledge-and-meaning.md`
 - Updated: `wiki/synthesis/meaning-of-life-components.md` (added emerging trend #7 and cross-references)
 - Updated: `wiki/index.md`, `wiki.html` (new pages registered)
+
+## [2026-04-05] ingest | Daily Well-Being Protocols (15 Practices)
+
+Compiled evidence-based compendium of 15 daily well-being behaviors from extensive web research across Huberman Lab, Stanford RCTs, PMC meta-analyses, Harvard Health, Greater Good, Sleep Foundation, and others. Practices span morning anchors (sunlight, hydration, caffeine delay, protein breakfast), active practices (exercise, breathwork, meditation, cold exposure, nature), throughout-day habits (micro social interactions, walking, digital boundaries), and evening routines (gratitude, self-compassion, sleep consistency).
+
+- Created: `raw/daily-wellbeing-protocols.md`, `raw/breathwork-stanford-rct.md`
+- Created: `wiki/sources/daily-wellbeing-protocols.md`, `wiki/sources/breathwork-stanford-rct.md`
+- Created: `wiki/concepts/daily-wellbeing-fundamentals.md`
+
+## [2026-04-05] ingest | Breathwork vs. Meditation: Stanford RCT
+
+Ingested Cell Reports Medicine (2023) Stanford RCT comparing breathwork protocols to mindfulness meditation (N=108, 28 days). Key finding: 5-minute daily cyclic sighing outperformed meditation for mood improvement. Cyclic sighing: +1.89 positive affect, -3.85 anxiety. Benefits compound with adherence.
+
+- Created: `raw/breathwork-stanford-rct.md`, `wiki/sources/breathwork-stanford-rct.md`
+- Updated: `wiki/synthesis/meaning-of-life-components.md` (added micro-level foundation note)
+- Updated: `wiki/index.md`, `wiki.html` (new pages registered)
+
+## [2026-04-06] ingest | Avoidance, Stress Coping, and Growth (8 Sources)
+
+Major expansion covering avoidance, stress coping mechanisms, and post-traumatic growth. Eight new sources ingested from PMC/NIH peer-reviewed research, StatPearls, and Greater Good Science Center.
+
+**Sources ingested:**
+1. Experiential Avoidance Process Model (Wang, Tian, & Yang 2024) — five-stage cascade of avoidance
+2. ACT as Transdiagnostic Intervention (Dindo et al. 2017) — hexaflex, psychological flexibility
+3. Coping Mechanisms Taxonomy (StatPearls) — Lazarus & Folkman, four coping categories
+4. Allostatic Load and Chronic Stress (Pfaltz et al. 2023) — biological wear-and-tear from stress
+5. Attachment, Emotion Regulation, and Defenses (Morris et al. 2025) — mapping attachment to defense patterns
+6. Vagal Stimulation Model (Gerritsen & Band 2018) — why breathing practices reduce stress
+7. Post-Traumatic Growth (Tedeschi 2023) — five domains of growth after adversity
+8. Attachment Insecurity and Earned Security (Laslocky, GGSC) — practical pathways to security
+
+**Created:**
+- 8 raw source documents in `raw/`
+- 8 source summary pages in `wiki/sources/`
+- 6 new concept pages: experiential avoidance, stress coping models, allostatic load, vagal tone & stress regulation, post-traumatic growth, experiential avoidance
+- 1 entity page: Richard Tedeschi
+- 1 synthesis page: The Avoidance–Growth Spectrum
+
+**Updated with cross-references:**
+- `wiki/concepts/defense-mechanisms.md` — added attachment-defense mapping, avoidance link
+- `wiki/concepts/attachment-theory.md` — added deactivating strategies, earned security pathways
+- `wiki/concepts/mature-coping-mechanisms.md` — linked to broader coping framework
+- `wiki/concepts/vulnerability.md` — linked to avoidance and PTG
+- `wiki/concepts/relationships.md` — added biological buffer section (allostatic load)
+- `wiki/index.md` — all new pages registered

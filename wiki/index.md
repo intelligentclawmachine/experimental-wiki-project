@@ -1,7 +1,7 @@
 ---
 title: Wiki Index
 type: index
-updated: 2026-04-05
+updated: 2026-04-06
 ---
 
 # Wiki Index
@@ -26,6 +26,16 @@ Master catalog of all pages in this knowledge base.
 - [Ego-Syntonic and Ego-Dystonic Behaviors](sources/ego-syntonic-dystonic.md) — Self-consistent vs. self-conflicting behaviors; blind spots
 - [Self-Concordance Theory and Ego Identity](sources/self-concordance-ego-identity.md) — Values-aligned goals; identity causes concordance
 - [Hierarchy of Defense Mechanisms](sources/defense-mechanisms-hierarchy.md) — 30 mechanisms, 7 levels; ego-syntonicity gradient
+- [Daily Well-Being Protocols](sources/daily-wellbeing-protocols.md) — 15 evidence-based daily behaviors compendium
+- [Breathwork vs. Meditation: Stanford RCT](sources/breathwork-stanford-rct.md) — 5-min cyclic sighing outperforms meditation for mood
+- [Experiential Avoidance: Process Model](sources/experiential-avoidance-process-model.md) — Five-stage cascade of avoidance; why it self-reinforces
+- [ACT: Transdiagnostic Intervention](sources/act-transdiagnostic.md) — Hexaflex model; psychological flexibility vs. avoidance
+- [Coping Mechanisms: Clinical Taxonomy](sources/coping-mechanisms-taxonomy.md) — Lazarus & Folkman; four coping categories
+- [Allostatic Load and Chronic Stress](sources/allostatic-load.md) — Biological wear-and-tear from chronic stress
+- [Attachment, Emotion Regulation, and Defenses](sources/attachment-emotion-regulation-defenses.md) — Mapping attachment styles to defense patterns
+- [Vagal Stimulation Model](sources/vagal-tone-contemplative.md) — Why breathwork/meditation/yoga all reduce stress
+- [Post-Traumatic Growth: Tedeschi](sources/post-traumatic-growth.md) — Five domains of growth after adversity
+- [Attachment Insecurity and Earned Security](sources/attachment-insecurity-earned-security.md) — Practical pathways from avoidant to secure
 
 ## Entities
 
@@ -37,6 +47,7 @@ Master catalog of all pages in this knowledge base.
 - [John Gottman](entities/john-gottman.md) — Couples research; Four Horsemen, bids, trust metric
 - [Brené Brown](entities/brene-brown.md) — Vulnerability, BRAVING, shame resilience
 - [Robin Dunbar](entities/robin-dunbar.md) — Social brain hypothesis, relationship layers
+- [Richard Tedeschi](entities/richard-tedeschi.md) — Post-traumatic growth pioneer
 
 ## Concepts
 
@@ -54,9 +65,16 @@ Master catalog of all pages in this knowledge base.
 - [Ego-Syntonic and Ego-Dystonic](concepts/ego-syntonic-and-dystonic.md) — Why harmful patterns feel natural; the blind-spot problem
 - [Self-Concordance](concepts/self-concordance.md) — Values-aligned vs. merely comfortable goals
 - [Defense Mechanisms](concepts/defense-mechanisms.md) — 30 mechanisms, 7 levels; ego-syntonicity gradient
+- [Experiential Avoidance](concepts/experiential-avoidance.md) — The core maladaptive process; avoidance paradox
+- [Stress Coping Models](concepts/stress-coping-models.md) — Lazarus & Folkman; four coping categories
+- [Allostatic Load](concepts/allostatic-load.md) — Biological cost of chronic stress
+- [Vagal Tone and Stress Regulation](concepts/vagal-tone-stress-regulation.md) — Breathing, HRV, parasympathetic recovery
+- [Post-Traumatic Growth](concepts/post-traumatic-growth.md) — Five domains of growth after adversity
+- [Daily Well-Being Fundamentals](concepts/daily-wellbeing-fundamentals.md) — 15 evidence-based daily practices
 
 ## Synthesis
 
-- [Components of a Meaningful Life](synthesis/meaning-of-life-components.md) — Master synthesis: relationships, hope, purpose, resilience, richness, nature
-- [The Nature of Meaningful Relationships](synthesis/nature-of-meaningful-relationships.md) — Deep dive: trust dynamics, vulnerability, the relationship stack
-- [Self-Knowledge and Meaning](synthesis/self-knowledge-and-meaning.md) — How ego-syntonicity, defenses, and self-concordance connect to meaning
+- [Components of a Meaningful Life](synthesis/meaning-of-life-components.md) — Master synthesis across all sources
+- [The Nature of Meaningful Relationships](synthesis/nature-of-meaningful-relationships.md) — Deep dive: trust, vulnerability, the relationship stack
+- [Self-Knowledge and Meaning](synthesis/self-knowledge-and-meaning.md) — Ego-syntonicity, defenses, and self-concordance
+- [The Avoidance–Growth Spectrum](synthesis/avoidance-growth-spectrum.md) — Two paths from adversity: avoidance vs. engagement

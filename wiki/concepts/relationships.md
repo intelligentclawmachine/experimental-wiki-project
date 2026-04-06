@@ -135,6 +135,10 @@ Multiple sources converge on loneliness as a health epidemic:
 
 ---
 
+## Relationships as a Biological Buffer
+
+Strong relationships are the most potent buffer against [[allostatic-load|allostatic load]] — the cumulative biological wear and tear from chronic stress. Social support inversely correlates with cortisol dysregulation, inflammation, and cardiovascular risk. Conversely, social isolation is itself a source of allostatic load. The Harvard Study's finding that loneliness equals smoking 15 cigarettes/day is not metaphorical — it reflects measurable physiological damage.
+
 ## Related Pages
 
 - [[trust|Trust]] — the currency of relationship quality
@@ -145,4 +149,6 @@ Multiple sources converge on loneliness as a health epidemic:
 - [[hope|Hope]] — forward-looking emotion strengthened through connection
 - [[mature-coping-mechanisms|Mature Coping Mechanisms]] — altruism as relational coping
 - [[self-compassion|Self-Compassion]] — capacity for kindness to others starts with self
+- [[allostatic-load|Allostatic Load]] — relationships as the primary biological buffer
+- [[stress-coping-models|Stress Coping Models]] — social coping as a key category
 - [[meaning-of-life-components|Components of a Meaningful Life]] — relationships as the dominant component

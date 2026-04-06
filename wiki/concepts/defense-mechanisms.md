@@ -2,8 +2,8 @@
 title: Defense Mechanisms
 type: concept
 created: 2026-04-05
-updated: 2026-04-05
-sources: [defense-mechanisms-hierarchy.md, ego-syntonic-dystonic-psychology.md, harvard-study-of-adult-development.md]
+updated: 2026-04-06
+sources: [defense-mechanisms-hierarchy.md, ego-syntonic-dystonic-psychology.md, harvard-study-of-adult-development.md, attachment-emotion-regulation-defenses-2025.md]
 tags: [defense-mechanisms, ego-syntonic, hierarchy, vaillant, awareness, coping]
 ---
 
@@ -62,6 +62,21 @@ The mature defense hierarchy maps directly onto existing wiki concepts:
 
 And [[mature-coping-mechanisms|Mature Coping Mechanisms]] — the existing page — describes Vaillant's subset of this hierarchy. Defense mechanisms are the broader framework that includes coping mechanisms.
 
+## Defenses and Attachment
+
+Morris et al. (2025) map specific defenses to attachment styles (Source: [Attachment and Defenses](../sources/attachment-emotion-regulation-defenses.md)):
+
+- **Secure** → mature defenses (humor, sublimation, anticipation)
+- **Dismissive-avoidant** → deactivating defenses (suppression, denial, intellectualization)
+- **Anxious-preoccupied** → hyperactivating defenses (splitting, projection, acting out)
+- **Fearful-avoidant** → disorganized switching (dissociation, passive aggression)
+
+Defense maturation — moving up this hierarchy — parallels the development of earned security in [[attachment-theory|attachment theory]].
+
+## Defenses vs. Coping Strategies
+
+Defenses and [[stress-coping-models|coping strategies]] describe overlapping phenomena from different angles. Defenses are largely unconscious and described in psychodynamic terms; coping strategies are often conscious and described in cognitive-behavioral terms. Immature defenses map to [[experiential-avoidance|experiential avoidance]]; mature defenses map to adaptive, flexible coping.
+
 ## Related Pages
 
 - [[ego-syntonic-and-dystonic|Ego-Syntonic and Ego-Dystonic]] — why defenses are invisible
@@ -70,3 +85,6 @@ And [[mature-coping-mechanisms|Mature Coping Mechanisms]] — the existing page 
 - [[self-concordance|Self-Concordance]] — defenses can serve discordant goals
 - [[vulnerability|Vulnerability]] — mature defenses enable vulnerability; immature ones block it
 - [[relationships|Relationships]] — mature defenses strengthen; immature defenses damage
+- [[experiential-avoidance|Experiential Avoidance]] — avoidance as the core immature defense process
+- [[attachment-theory|Attachment Theory]] — attachment styles predict defense patterns
+- [[stress-coping-models|Stress Coping Models]] — the cognitive-behavioral complement to defenses
