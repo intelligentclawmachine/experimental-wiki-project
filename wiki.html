@@ -534,17 +534,22 @@ function renderMarkdown(md) {
     `<pre><code class="language-${lang}">${esc(code.trimEnd())}</code></pre>`
   );
 
-  // Tables
+  // Tables — first protect wikilink pipes by temporarily replacing them
   html = html.replace(/^(\|.+\|)\n(\|[\s\-:|]+\|)\n((?:\|.+\|\n?)+)/gm, (_, header, sep, body) => {
-    const heads = header.split('|').filter(c => c.trim()).map(c => `<th>${inline(c.trim())}</th>`).join('');
+    // Replace pipes inside [[ ]] with a placeholder before splitting
+    const protectPipes = (s) => s.replace(/\[\[([^\]]*?)\]\]/g, (m) => m.replace(/\|/g, '\x00'));
+    const unprotect = (s) => s.replace(/\x00/g, '|');
+    const ph = protectPipes(header);
+    const heads = ph.split('|').filter(c => c.trim()).map(c => `<th>${inline(unprotect(c.trim()))}</th>`).join('');
     const aligns = sep.split('|').filter(c => c.trim()).map(c => {
       if (c.trim().startsWith(':') && c.trim().endsWith(':')) return 'center';
       if (c.trim().endsWith(':')) return 'right';
       return 'left';
     });
     const rows = body.trim().split('\n').map(r => {
-      const cells = r.split('|').filter(c => c.trim()).map((c, i) =>
-        `<td style="text-align:${aligns[i] || 'left'}">${inline(c.trim())}</td>`
+      const pr = protectPipes(r);
+      const cells = pr.split('|').filter(c => c.trim()).map((c, i) =>
+        `<td style="text-align:${aligns[i] || 'left'}">${inline(unprotect(c.trim()))}</td>`
       ).join('');
       return `<tr>${cells}</tr>`;
     }).join('');
