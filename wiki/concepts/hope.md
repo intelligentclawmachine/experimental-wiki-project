@@ -51,3 +51,5 @@ Hope is distinct from optimism (a general expectation that things will go well).
 - [[relationships|Relationships]] — hope strengthens through and for connection
 - [[psychological-richness|Psychological Richness]] — hope may drive seeking diverse experiences
 - [[meaning-of-life-components|Components of a Meaningful Life]]
+- [[regret]] — hope as the antidote to regret-driven paralysis
+- [[meaningful-work]] — agency and pathways thinking in career pursuit

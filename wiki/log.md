@@ -240,3 +240,37 @@ Exploration of avoidance through stimulation — the pattern of using intense, c
 - `wiki/concepts/psychological-richness.md` — added sensation seeking as healthy richness pathway
 - `wiki/synthesis/avoidance-growth-spectrum.md` — added stimulation-based avoidance and paradox links
 - `wiki/index.md` — all new pages registered
+
+## [2026-04-06] ingest | Regret: Microscale and Lifetime (1 Source)
+
+The psychology of regret — from daily decision-making to lifetime retrospection.
+
+**Sources ingested:**
+1. The Psychology of Regret (synthesis 2025) — Gilovich & Medvec temporal pattern, counterfactual thinking, Camille OFC findings, Schwartz paradox of choice, Pink's four core regrets, Ware's dying regrets, regret regulation strategies
+
+**Created:**
+- 1 raw source document, 1 source summary page
+- 1 concept page: Regret
+
+**Updated:**
+- `wiki/concepts/self-concordance.md` — added regret and meaningful work links
+- `wiki/concepts/self-compassion.md` — added regret regulation link
+- `wiki/concepts/hope.md` — added regret and meaningful work links
+- `wiki/index.md` — new pages registered
+
+## [2026-04-06] ingest | Meaningful Work, Flow State, and Attention (3 Sources)
+
+Work, focus, and the cognitive substrate they depend on.
+
+**Sources ingested:**
+1. Meaningful Work (synthesis 2025) — Wrzesniewski, SDT, job crafting, ikigai, burnout vs. engagement
+2. Flow State (synthesis 2025) — Csikszentmihalyi's eight characteristics, challenge-skill balance, transient hypofrontality, deep work
+3. The Science of Attention (synthesis 2025) — Posner's three networks, selective attention theories, attention restoration, attention economy, mindfulness
+
+**Created:**
+- 3 raw source documents, 3 source summary pages
+- 3 concept pages: Meaningful Work, Flow State, Attention
+
+**Updated:**
+- `wiki/concepts/nature-and-wellbeing.md` — added attention restoration link
+- `wiki/index.md` — all new pages registered

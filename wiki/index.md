@@ -46,6 +46,10 @@ Master catalog of all pages in this knowledge base.
 - [Stimulation as Avoidance: Active Escape](sources/stimulation-avoidance-active-escape.md) — Busyness, behavioral addictions, dopamine trap
 - [Boredom, Distress Intolerance](sources/boredom-distress-intolerance.md) — MAC model, DMN, digital acceleration, distress tolerance
 - [Counterphobic Behavior and Thrill-Seeking](sources/counterphobic-thrill-seeking.md) — Anna Freud, trauma repetition, workaholism, exercise addiction
+- [The Psychology of Regret](sources/regret-psychology.md) — Gilovich & Medvec, counterfactuals, Pink's four core regrets
+- [Meaningful Work](sources/meaningful-work.md) — Wrzesniewski, SDT, job crafting, burnout vs. engagement
+- [Flow State: Optimal Experience](sources/flow-state.md) — Csikszentmihalyi, challenge-skill balance, deep work
+- [The Science of Attention](sources/science-of-attention.md) — Posner's three networks, load theory, attention restoration
 
 ## Entities
 
@@ -89,6 +93,10 @@ Master catalog of all pages in this knowledge base.
 - [Stimulation-Based Avoidance](concepts/stimulation-based-avoidance.md) — Avoidance through busyness, overstimulation, behavioral addiction
 - [Boredom Intolerance](concepts/boredom-intolerance.md) — Boredom as aversive signal; DMN, distress intolerance, digital amplification
 - [Counterphobic Behavior](concepts/counterphobic-behavior.md) — Thrill-seeking, adrenaline addiction, workaholism, trauma repetition
+- [Regret](concepts/regret.md) — Action vs. inaction regrets; counterfactual thinking; regret as value signal
+- [Meaningful Work](concepts/meaningful-work.md) — Job-calling-career; SDT; job crafting; burnout
+- [Flow State](concepts/flow-state.md) — Optimal experience; challenge-skill balance; transient hypofrontality
+- [Attention](concepts/attention.md) — Three networks; selective attention; restoration theory; attention economy
 
 ## Synthesis
 

@@ -35,3 +35,4 @@ Small-scale societies living in close contact with nature report 6.8/10 life sat
 - [[relationships|Relationships]] — nature often experienced socially
 - [[psychological-richness|Psychological Richness]] — biodiversity as perspective-expanding experience
 - [[meaning-of-life-components|Components of a Meaningful Life]]
+- [[attention]] — attention restoration theory: nature restores directed attention

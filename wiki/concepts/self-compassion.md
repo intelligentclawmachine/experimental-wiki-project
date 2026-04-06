@@ -39,3 +39,4 @@ Self-compassion is complementary to [[mature-coping-mechanisms|mature coping mec
 - [[forgiveness|Forgiveness]] — forgiveness directed inward
 - [[mature-coping-mechanisms|Mature Coping Mechanisms]] — complementary outward-directed coping
 - [[meaning-of-life-components|Components of a Meaningful Life]]
+- [[regret]] — self-compassion as regret regulation

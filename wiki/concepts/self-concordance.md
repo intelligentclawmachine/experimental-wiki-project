@@ -81,3 +81,5 @@ Self-concordant goals satisfy three basic needs:
 - [[vulnerability|Vulnerability]] — required to examine whether your goals are truly yours
 - [[relationships|Relationships]] — relatedness as a basic need
 - [[meaning-of-life-components|Components of a Meaningful Life]]
+- [[regret]] — regrets reveal misalignment with authentic goals
+- [[meaningful-work]] — calling as self-concordant work orientation
