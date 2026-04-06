@@ -3,7 +3,7 @@ title: Trust Repair
 type: concept
 created: 2026-04-06
 updated: 2026-04-06
-sources: [trust-repair-review-2023.md, gottman-trust-and-relationships.md, brene-brown-anatomy-of-trust.md, philosophy-of-trust-sep.md]
+sources: [trust-repair-review-2023.md, gottman-trust-and-relationships.md, brene-brown-anatomy-of-trust.md, philosophy-of-trust-sep.md, eft-attachment-injury-resolution.md]
 tags: [trust, repair, betrayal, forgiveness, accountability, therapy]
 ---
 
@@ -57,6 +57,16 @@ From the couples therapy literature (Giacobbi 2025):
 - **Trust repair** is relational — rebuilding confidence in the other person's future behavior
 - You can forgive without restoring trust (and often should)
 - You cannot restore trust without some degree of forgiveness
+
+## Emotionally Focused Therapy (EFT)
+
+The most evidence-based approach to trust repair in couples is the Attachment Injury Resolution Model within EFT (Source: [EFT/AIRM](../sources/eft-attachment-injury-resolution.md)):
+
+1. **De-escalate** the negative cycle — help both partners see the *pattern* as the enemy, not each other
+2. **Restructure** interactions — the injured partner expresses vulnerable emotions (fear, grief) underneath anger; the injuring partner offers genuine emotional presence, not just cognitive acknowledgment
+3. **Consolidate** — new patterns of accessibility and responsiveness become self-reinforcing
+
+EFT has a 70-75% success rate and lasting improvements at 2-year follow-up. It's grounded in [[attachment-theory]]: betrayal is an attachment injury that shatters the sense of the relationship as a safe haven. Repair means re-establishing the partner as a secure base.
 
 ## The Neuroscience of Repair
 

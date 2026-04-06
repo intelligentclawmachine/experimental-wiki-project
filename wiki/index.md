@@ -41,6 +41,7 @@ Master catalog of all pages in this knowledge base.
 - [Philosophy of Trust](sources/philosophy-of-trust.md) — Trust vs. reliance; Baier, Hardin, Hawley, O'Neill
 - [Psychological Safety in Teams](sources/psychological-safety-edmondson.md) — Edmondson; safety vs. trust distinction
 - [2026 Edelman Trust Barometer](sources/edelman-trust-barometer-2026.md) — Institutional trust decline; insularity shift
+- [EFT: Attachment Injury Resolution](sources/eft-attachment-injury-resolution.md) — Evidence-based couples therapy for trust repair (70-75% success)
 
 ## Entities
 
