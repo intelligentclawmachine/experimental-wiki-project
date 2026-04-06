@@ -16,7 +16,7 @@ A shared belief that a team is safe for interpersonal risk-taking. Not the absen
 A critical distinction (Source: [Edmondson](../sources/psychological-safety-edmondson.md)):
 
 - **Psychological safety** is a *group climate* — "how things work here"
-- **[[Trust]]** is a *dyadic relationship* — "can I count on you"
+- **[[trust|Trust]]** is a *dyadic relationship* — "can I count on you"
 
 Safety is the soil; trust is the plant. You can't build deep interpersonal trust in an environment where people fear speaking up. And a psychologically safe environment naturally generates the repeated positive interactions from which trust grows.
 

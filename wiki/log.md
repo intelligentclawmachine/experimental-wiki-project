@@ -274,3 +274,37 @@ Work, focus, and the cognitive substrate they depend on.
 **Updated:**
 - `wiki/concepts/nature-and-wellbeing.md` — added attention restoration link
 - `wiki/index.md` — all new pages registered
+
+## [2026-04-06] lint | Wiki Health Check and Major Expansion
+
+Comprehensive lint pass identifying broken wikilinks, missing cross-references, case-sensitivity issues, orphan pages, and missing entity pages. Followed by major expansion addressing all identified gaps.
+
+### Lint Fixes
+- Fixed capitalization issues: `[[Trust]]` → `[[trust|Trust]]`, `[[Forgiveness]]` → `[[forgiveness|Forgiveness]]`
+- Resolved 6 broken wikilinks by creating missing pages
+
+### Expansion: 9 New Concept Pages
+**Sources ingested (9):**
+1. Shame Psychology — Lewis, Tangney, Brown (shame resilience), Nathanson (compass of shame), Bradshaw (toxic shame)
+2. Emotional Regulation — Gross (process model), Gratz & Roemer (DERS), Siegel (window of tolerance), Tronick (co-regulation)
+3. Rumination — Nolen-Hoeksema (response styles), Treynor (brooding vs. reflection), Watkins (RFCBT), Martin & Tesser (goal discrepancy)
+4. Identity and the Self — Erikson, Marcia (four statuses), McAdams (narrative identity), Campbell (self-concept clarity), Markus & Nurius (possible selves)
+5. Grief and Loss — Stroebe & Schut (dual process), Klass (continuing bonds), Prigerson & Shear (prolonged grief), Worden, Doka (disenfranchised grief)
+6. Motivation — Deci & Ryan (SDT continuum), Locke & Latham (goal-setting), Elliot (approach/avoidance), Bandura (self-efficacy), Pychyl & Sirois (procrastination)
+7. Loneliness — Cacioppo (evolutionary theory), Holt-Lunstad (mortality meta-analysis), Masi (intervention meta-analysis)
+8. Resilience — Masten (ordinary magic), Bonanno (four trajectories), Werner & Smith (Kauai), Luthans (PsyCap), Duckworth (grit)
+9. Sleep — Walker (Why We Sleep), Roenneberg (chronotype/social jetlag), memory consolidation, overnight therapy
+
+**Also created:**
+- 2 additional concept pages: Psychological Flexibility (ACT hexaflex), Self-Determination Theory (autonomy/competence/relatedness)
+- 5 entity pages: Marvin Zuckerman, Charles R. Snyder, John Bowlby, Mihaly Csikszentmihalyi, Anna Lembke
+- 2 synthesis pages: The Attention-Avoidance-Flow Triangle, What Makes a Life Worth Living (master synthesis)
+
+**Total new pages:** 9 raw sources, 9 source summaries, 11 concept pages, 5 entity pages, 2 synthesis pages = 36 new files
+
+**Updated:**
+- `wiki/concepts/trust-repair.md` — fixed [[Forgiveness]] case
+- `wiki/concepts/psychological-safety.md` — fixed [[Trust]] case
+- `wiki.html` — all new pages registered with aliases
+- `wiki/index.md` — all new pages cataloged
+- `wiki/log.md` — this entry

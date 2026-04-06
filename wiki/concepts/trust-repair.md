@@ -51,7 +51,7 @@ From the couples therapy literature (Giacobbi 2025):
 
 ## Trust Repair and Forgiveness
 
-[[Forgiveness]] and trust repair are related but distinct:
+[[forgiveness|Forgiveness]] and trust repair are related but distinct:
 
 - **Forgiveness** is internal — releasing resentment and the desire for retribution
 - **Trust repair** is relational — rebuilding confidence in the other person's future behavior

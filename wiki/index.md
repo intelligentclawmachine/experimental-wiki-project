@@ -50,6 +50,15 @@ Master catalog of all pages in this knowledge base.
 - [Meaningful Work](sources/meaningful-work.md) — Wrzesniewski, SDT, job crafting, burnout vs. engagement
 - [Flow State: Optimal Experience](sources/flow-state.md) — Csikszentmihalyi, challenge-skill balance, deep work
 - [The Science of Attention](sources/science-of-attention.md) — Posner's three networks, load theory, attention restoration
+- [Shame Psychology](sources/shame-psychology.md) — Lewis, Tangney, Brown, Nathanson; shame vs. guilt
+- [Emotional Regulation](sources/emotional-regulation.md) — Gross process model, DERS, window of tolerance
+- [Rumination Psychology](sources/rumination-psychology.md) — Nolen-Hoeksema, brooding vs. reflection, DMN
+- [Identity and the Self](sources/identity-self.md) — Erikson, Marcia, McAdams narrative identity
+- [Grief and Loss](sources/grief-and-loss.md) — Dual Process Model, continuing bonds, prolonged grief
+- [Motivation Psychology](sources/motivation-psychology.md) — SDT continuum, goal-setting, procrastination
+- [Loneliness and Social Isolation](sources/loneliness-social-isolation.md) — Cacioppo, Holt-Lunstad; loneliness as epidemic
+- [Resilience Psychology](sources/resilience-psychology.md) — Masten, Bonanno, Werner & Smith, grit
+- [Sleep Science](sources/sleep-science.md) — Walker, memory consolidation, overnight therapy, circadian rhythms
 
 ## Entities
 
@@ -64,6 +73,11 @@ Master catalog of all pages in this knowledge base.
 - [Richard Tedeschi](entities/richard-tedeschi.md) — Post-traumatic growth pioneer
 - [Paul Zak](entities/paul-zak.md) — Neuroeconomist; oxytocin and trust
 - [Amy Edmondson](entities/amy-edmondson.md) — Psychological safety researcher
+- [Marvin Zuckerman](entities/marvin-zuckerman.md) — Sensation seeking pioneer
+- [Charles R. Snyder](entities/charles-snyder.md) — Hope Theory architect
+- [John Bowlby](entities/john-bowlby.md) — Attachment theory founder
+- [Mihaly Csikszentmihalyi](entities/mihaly-csikszentmihalyi.md) — Flow state pioneer
+- [Anna Lembke](entities/anna-lembke.md) — Dopamine Nation; pleasure-pain balance
 
 ## Concepts
 
@@ -97,6 +111,17 @@ Master catalog of all pages in this knowledge base.
 - [Meaningful Work](concepts/meaningful-work.md) — Job-calling-career; SDT; job crafting; burnout
 - [Flow State](concepts/flow-state.md) — Optimal experience; challenge-skill balance; transient hypofrontality
 - [Attention](concepts/attention.md) — Three networks; selective attention; restoration theory; attention economy
+- [Psychological Flexibility](concepts/psychological-flexibility.md) — ACT hexaflex; the hinge between avoidance and engagement
+- [Self-Determination Theory](concepts/self-determination-theory.md) — Autonomy, competence, relatedness; motivation continuum
+- [Shame](concepts/shame.md) — Shame vs. guilt; compass of shame; shame resilience
+- [Emotional Regulation](concepts/emotional-regulation.md) — Gross's process model; window of tolerance; co-regulation
+- [Rumination](concepts/rumination.md) — Repetitive thought as cognitive avoidance; DMN hyperactivity
+- [Identity and the Self](concepts/identity.md) — Erikson, Marcia, narrative identity; self-concept clarity
+- [Grief and Loss](concepts/grief-and-loss.md) — Dual Process Model; continuing bonds; attachment and grief
+- [Motivation](concepts/motivation.md) — SDT continuum; goal-setting; procrastination as emotion regulation failure
+- [Loneliness and Social Isolation](concepts/loneliness.md) — Cacioppo's theory; hypervigilance loop; health consequences
+- [Resilience](concepts/resilience.md) — Ordinary magic; four trajectories; PsyCap; grit
+- [Sleep](concepts/sleep.md) — Architecture; memory consolidation; overnight therapy; circadian rhythms
 
 ## Synthesis
 
@@ -105,3 +130,5 @@ Master catalog of all pages in this knowledge base.
 - [Self-Knowledge and Meaning](synthesis/self-knowledge-and-meaning.md) — Ego-syntonicity, defenses, and self-concordance
 - [The Avoidance–Growth Spectrum](synthesis/avoidance-growth-spectrum.md) — Two paths from adversity: avoidance vs. engagement
 - [The Stimulation-Avoidance Paradox](synthesis/stimulation-avoidance-paradox.md) — How seeking more stimulation to avoid feeling creates more distress
+- [The Attention-Avoidance-Flow Triangle](synthesis/attention-avoidance-flow.md) — How attention, avoidance, and flow form a connected system
+- [What Makes a Life Worth Living](synthesis/what-makes-a-life-worth-living.md) — Master synthesis: connection, engagement, self-knowledge, courage
