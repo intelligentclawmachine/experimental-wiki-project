@@ -482,7 +482,10 @@
 </head>
 <body>
 
-<button id="mobile-menu-toggle" aria-label="Open navigation">&#9776;</button>
+<button id="mobile-menu-toggle" aria-label="Open navigation">
+  <svg id="menu-icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  <svg id="menu-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="display:none"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+</button>
 <div id="sidebar-overlay"></div>
 <div id="sidebar">
   <div id="sidebar-header">
@@ -1048,15 +1051,20 @@ const mobileToggle = document.getElementById('mobile-menu-toggle');
 const sidebarEl = document.getElementById('sidebar');
 const sidebarOverlay = document.getElementById('sidebar-overlay');
 
+const menuIconOpen = document.getElementById('menu-icon-open');
+const menuIconClose = document.getElementById('menu-icon-close');
+
 function openMobileSidebar() {
   sidebarEl.classList.add('open');
   sidebarOverlay.classList.add('open');
-  mobileToggle.innerHTML = '&#10005;';
+  menuIconOpen.style.display = 'none';
+  menuIconClose.style.display = 'block';
 }
 function closeMobileSidebar() {
   sidebarEl.classList.remove('open');
   sidebarOverlay.classList.remove('open');
-  mobileToggle.innerHTML = '&#9776;';
+  menuIconOpen.style.display = 'block';
+  menuIconClose.style.display = 'none';
 }
 mobileToggle.addEventListener('click', () => {
   sidebarEl.classList.contains('open') ? closeMobileSidebar() : openMobileSidebar();
