@@ -61,6 +61,7 @@ The Harvard Study's overarching message: "resilience counts." [[mature-coping-me
 4. **Three-dimensional well-being**: the happiness/meaning binary is being replaced by happiness/meaning/richness
 5. **Cross-cultural convergence**: family, self-sufficiency, and connection appear in top sources across Japan, India, Poland, US, and 17 Pew countries
 6. **Intergenerational transmission**: empathy passes across three generations through relationships — meaning compounds through families
+7. **Self-knowledge as prerequisite**: [[ego-syntonic-and-dystonic|ego-syntonic]] blind spots — patterns that feel natural but harm connection — are the hidden obstacle. [[defense-mechanisms|Defense mechanisms]] operate below awareness; growth in defensive maturity IS growth toward meaning. [[self-concordance|Self-concordance]] (values-aligned goals) requires identity development first. See [[self-knowledge-and-meaning|Self-Knowledge and Meaning]] synthesis.
 
 ---
 
@@ -88,3 +89,7 @@ Vaillant said it most concisely: *"One is love. The other is finding a way of co
 - [[psychological-richness|Psychological Richness]] — the growth dimension
 - [[forgiveness|Forgiveness]], [[trust|Trust]], [[self-compassion|Self-Compassion]] — supporting practices
 - [[nature-and-wellbeing|Nature and Well-being]] — environmental component
+- [[ego-syntonic-and-dystonic|Ego-Syntonic and Ego-Dystonic]] — the hidden obstacle to meaning
+- [[defense-mechanisms|Defense Mechanisms]] — hierarchy from blindness to awareness
+- [[self-concordance|Self-Concordance]] — values-aligned goals vs. merely comfortable ones
+- [[self-knowledge-and-meaning|Self-Knowledge and Meaning]] — synthesis connecting ego-syntonicity to meaningful life

@@ -122,3 +122,33 @@ Created deep-dive synthesis on how relationships work, integrating Gottman, Brow
 
 - Created: `wiki/synthesis/nature-of-meaningful-relationships.md`
 - Updated: `wiki/synthesis/meaning-of-life-components.md`, `wiki/index.md`
+
+## [2026-04-05] ingest | Ego-Syntonic and Ego-Dystonic Behaviors
+
+Ingested multi-source review on ego-syntonic/dystonic psychology. Key findings: ego-syntonic behaviors feel natural but create blind spots; ego-syntonicity is a continuum, not binary (N=241 PD study); shift from syntonic to dystonic is what drives growth and therapy engagement; defense mechanisms are inherently ego-syntonic.
+
+- Created: `raw/ego-syntonic-dystonic-psychology.md`, `wiki/sources/ego-syntonic-dystonic.md`
+- Created: `wiki/concepts/ego-syntonic-and-dystonic.md`
+
+## [2026-04-05] ingest | Self-Concordance Theory and Ego Identity
+
+Ingested longitudinal research on self-concordance (Frontiers in Psychology, 2024) + SDT foundations. Key finding: ego identity CAUSES self-concordant goal-setting (β=0.21), not vice versa. Identity diffusion → lowest self-concordance (0.23); identity achievement → highest (2.77). Cross-cultural validation.
+
+- Created: `raw/self-concordance-ego-identity.md`, `wiki/sources/self-concordance-ego-identity.md`
+- Created: `wiki/concepts/self-concordance.md`
+
+## [2026-04-05] ingest | Hierarchy of Defense Mechanisms
+
+Ingested Vaillant/Perry defense mechanism hierarchy (Frontiers in Psychology, 2021). 30 mechanisms across 7 levels. Key insight: defenses are inherently ego-syntonic; mature defenses (Level 7) involve conscious awareness while immature defenses (Level 1-4) are invisible blind spots. Growth in defensive maturity = growth in self-awareness.
+
+- Created: `raw/defense-mechanisms-hierarchy.md`, `wiki/sources/defense-mechanisms-hierarchy.md`
+- Created: `wiki/concepts/defense-mechanisms.md`
+- Updated: `wiki/concepts/mature-coping-mechanisms.md` (cross-reference)
+
+## [2026-04-05] synthesis | Self-Knowledge and Meaning
+
+Created synthesis connecting ego-syntonicity, defense mechanisms, and self-concordance to the meaningful life framework. Introduced three levels of self-knowledge (comfort → discomfort → concordance) and a developmental arc from ego-syntonic blindness through ego-dystonic awareness to values-aligned authentic living.
+
+- Created: `wiki/synthesis/self-knowledge-and-meaning.md`
+- Updated: `wiki/synthesis/meaning-of-life-components.md` (added emerging trend #7 and cross-references)
+- Updated: `wiki/index.md`, `wiki.html` (new pages registered)
