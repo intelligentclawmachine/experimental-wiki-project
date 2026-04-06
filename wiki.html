@@ -288,14 +288,19 @@
     background: none;
     padding: 0;
   }
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 16px 0;
+  }
   #content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 16px 0;
     font-size: 14px;
+    margin: 0;
   }
   #content th {
-    text-align: left;
     font-weight: 700;
     padding: 10px 12px;
     border-bottom: 2px solid var(--border);
@@ -633,12 +638,12 @@ function renderMarkdown(md) {
     const protectPipes = (s) => s.replace(/\[\[([^\]]*?)\]\]/g, (m) => m.replace(/\|/g, '\x00'));
     const unprotect = (s) => s.replace(/\x00/g, '|');
     const ph = protectPipes(header);
-    const heads = ph.split('|').filter(c => c.trim()).map(c => `<th>${inline(unprotect(c.trim()))}</th>`).join('');
     const aligns = sep.split('|').filter(c => c.trim()).map(c => {
       if (c.trim().startsWith(':') && c.trim().endsWith(':')) return 'center';
       if (c.trim().endsWith(':')) return 'right';
       return 'left';
     });
+    const heads = ph.split('|').filter(c => c.trim()).map((c, i) => `<th style="text-align:${aligns[i] || 'left'}">${inline(unprotect(c.trim()))}</th>`).join('');
     const rows = body.trim().split('\n').map(r => {
       const pr = protectPipes(r);
       const cells = pr.split('|').filter(c => c.trim()).map((c, i) =>
@@ -646,7 +651,7 @@ function renderMarkdown(md) {
       ).join('');
       return `<tr>${cells}</tr>`;
     }).join('');
-    return `<table><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table>`;
+    return `<div class="table-wrapper"><table><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table></div>`;
   });
 
   // Headings
