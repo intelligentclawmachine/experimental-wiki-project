@@ -2,8 +2,8 @@
 title: Attachment Theory
 type: concept
 created: 2026-04-05
-updated: 2026-04-05
-sources: [attachment-theory-adult-relationships.md, harvard-study-of-adult-development.md]
+updated: 2026-04-06
+sources: [attachment-theory-adult-relationships.md, harvard-study-of-adult-development.md, attachment-emotion-regulation-defenses-2025.md, attachment-insecurity-earned-security.md]
 tags: [attachment, developmental, security, relationships, anxiety, avoidance]
 ---
 
@@ -54,10 +54,33 @@ Attachment style influences:
 - Capacity for [[forgiveness|forgiveness]] (secure = more forgiving)
 - Use of [[mature-coping-mechanisms|mature coping]] vs. immature defenses
 
+## Attachment and Defense Mechanisms
+
+Each attachment style deploys characteristic defenses (Source: [Attachment and Defenses](../sources/attachment-emotion-regulation-defenses.md)):
+
+- **Dismissive-avoidant** → deactivating defenses: suppression, emotional distancing, denial of need, intellectualization. They report feeling fine while their bodies register high stress — a mismatch that silently drives [[allostatic-load|allostatic load]].
+- **Anxious-preoccupied** → hyperactivating defenses: amplifying emotions, splitting, acting out — designed to maximize proximity-seeking.
+- **Fearful-avoidant** → disorganized switching between both, with dissociation and passive aggression.
+
+## The Path to Earned Security
+
+Attachment patterns are learnable skills, not fixed traits (Source: [Earned Security](../sources/attachment-insecurity-earned-security.md)):
+
+1. Education about your pattern
+2. Therapy with attachment-specialized clinicians
+3. Relationships with securely attached partners (~50% of adults)
+4. Couples therapy for attachment dynamics
+5. Deliberate practice of uncomfortable [[vulnerability|vulnerability]]
+
+Security priming research shows that even temporarily activating a sense of security increases generosity, compassion, and prosocial behavior — security radiates outward.
+
 ## Related Pages
 
 - [[relationships|Relationships]] — attachment as the operating system of connection
 - [[vulnerability|Vulnerability]] — secure attachment enables it
 - [[trust|Trust]] — attachment patterns predict trust capacity
 - [[self-trust|Self-Trust]] — internal attachment security
+- [[defense-mechanisms|Defense Mechanisms]] — attachment styles predict defense patterns
+- [[experiential-avoidance|Experiential Avoidance]] — avoidant attachment as relational avoidance
+- [[allostatic-load|Allostatic Load]] — the hidden physiological cost of insecure attachment
 - [[harvard-study-of-adult-development|Harvard Study]] — longitudinal evidence for attachment's impact

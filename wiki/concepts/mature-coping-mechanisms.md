@@ -40,9 +40,22 @@ Vaillant's fifth lesson: "Replacing self-centeredness with mature coping mechani
 
 The Harvard Study's overarching message: **"Resilience counts."** Difficult beginnings do not preclude flourishing. The trajectory of coping development matters more than starting conditions. Godfrey Camille had the lowest stability rating and attempted suicide, yet developed mature coping and became a successful psychiatrist.
 
+## Connection to Broader Coping Framework
+
+Vaillant's mature defenses represent the adaptive end of a broader spectrum described in [[stress-coping-models|stress coping models]]:
+
+- Mature defenses align with **problem-focused** and **meaning-focused** coping strategies
+- Immature defenses align with **[[experiential-avoidance|experiential avoidance]]** — the maladaptive pattern of escaping discomfort
+- The transition from immature to mature coping parallels movement toward [[attachment-theory|earned security]]
+- [[post-traumatic-growth|Post-traumatic growth]] often involves the development of mature defenses in response to adversity
+
 ## Related Pages
 
 - [[relationships|Relationships]] — altruism and humor strengthen bonds
 - [[hope|Hope]] — anticipation as a mature coping mechanism is closely related to hope
 - [[self-compassion|Self-Compassion]] — a complementary coping practice
+- [[stress-coping-models|Stress Coping Models]] — the broader cognitive-behavioral framework
+- [[experiential-avoidance|Experiential Avoidance]] — the opposite end of the coping spectrum
+- [[defense-mechanisms|Defense Mechanisms]] — the full hierarchy including immature defenses
+- [[post-traumatic-growth|Post-Traumatic Growth]] — growth often involves developing mature coping
 - [[meaning-of-life-components|Components of a Meaningful Life]]
